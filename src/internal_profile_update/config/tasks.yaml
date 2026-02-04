@@ -1,0 +1,3216 @@
+reviewing_section_client_overview_and_status_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **1\) Client Overview and Status**
+
+    Updates in this section should be made according to the type “Status / Snapshot” (Only the most recent ones). The only part in this section that must show an historical log (accumulative) is “Logs”
+
+    Purpose: Provide a quick, factual snapshot of the client’s information and current status within AcquiMatch. This section should serve as the foundation for understanding who the client is, when their deal search started, and who maintains their internal profile.
+
+    ## **1\) Client Overview and Status**
+    * Client Name:  
+    * Search Start Date:   Enter the exact date when the client’s deal search officially began. This is typically right after the onboarding is completed. It is a single date
+    * Location (Home Base)   
+    * Timezone:   
+    * Current Status: (First-time buyer / Existing owner seeking expansion / etc.)  
+    * Decision Makers: Who has to say “yes” for the acquisition (e.g., “Client primary; spouse weighs in on final decision”).  
+    * High Level Important Note: (if applicable)  
+    * Profile Maintained By: Initial Author | Last Updated Indicate the Analyst assigned to the client
+    * Logs: List the date and title of every transcript or call note that has been reviewed and used to build this internal profile. This helps track which sources of information have already been considered and ensures no transcript is processed twice.
+     
+
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+     Below is the whole context about the client that you have to use to extract the information needed to fill in the section.
+     {raw_updates}
+     {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+
+    {
+    "1) Client Overview & Status": {
+        "Client Name": "",
+        "Search Start Date": "",
+        "Location (Home Base)": "",
+        "Timezone": "",
+        "Current Status": "",
+        "Decision Makers": "",
+        "High Level Important Note": "",
+        "Profile Maintained By": "",
+        "Logs": [
+            ""
+        ]
+    }
+    }
+    
+
+  agent: sections_reviewer
+
+reviewing_section_search_parameters_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **2\)  Search Parameters**
+
+    Updates in this section should be made according to the type “State / Snapshot” (Most Recent Only)
+
+     Purpose: Keep external and internal aligned. If something differs, note the reason clearly here (and do not contradict the external). Rule: Do not list private numbers here, use Section 3 for that. This section must match the external profile exactly on public items;
+
+    ## **2\)  Search Parameters**
+
+    * Intro paragraph from external profile
+
+    * **Target Business Size:** Public SDE floor \+ acquisition ceiling (ceiling \= SBA pre-qual \+ $3M).
+
+    * **Geography:** Primary metro; nearby cities/corridors; flexibility caveat (e.g., “Dallas/Houston considered with limited travel”).
+
+    * **Industry Approach:** Open across many industries \+ alignment to skillset; strong NOs; top interests; online stance (e.g., SaaS okay; no e-commerce).
+
+    * **Business Characteristics:** Stable operations, growth potential, team culture fit, customer model (B2B preferred / B2C OK if structured), regulation/license avoidance.
+
+     Below is the full internal profile of the client:
+
+     {internal_profile}
+
+
+     Below is the whole context about the client that you have to use to extract the information needed to fill in the section. 
+     {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "2) Search Parameters": {
+        "Client Intro": "",
+        "Target Business Size": [
+            ""
+        ],
+        "Geography": [
+            ""
+        ],
+        "Industry Approach": [
+            ""
+        ],
+        "Business Characteristics": [
+            ""
+        ]
+    }
+    }
+
+  agent: sections_reviewer
+
+
+reviewing_section_financial_profile_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **3\) Financial Profile**
+
+    Updates in this section should be made according to the type “State / Snapshot” (Most Recent Only)
+    
+    Purpose: Understand the client’s real financial capacity, comfort level, and limits, what they can afford, how they plan to finance an acquisition, and what level of financial risk they’re comfortable with. This section ensures all deal recommendations align with their financial reality and preferences.
+    Note: If any of the information is unclear, missing, or not explicitly available, do not infer or create numbers - instead, flag the field as “Not specified” or “Needs confirmation.”
+
+    ## **3\) Financial Profile**
+
+    * **Minimum CashFlow/Income (Pre-Tax) After Debt Service Desired:**  
+    * **Minimum CashFlow/Income (Post-Tax) After Debt Service Desired:**  
+    * **Ideal Cashflow/Income (Pre-Tax) After Debt Service Desired:**  
+    * **Ideal Cashflow/Income (Post-Tax) After Debt Service Desired:**  
+    * **Total Cash Available:** (liquid funds today)
+
+    * **Planned Investment Amount:** (how much of that they want to use)
+
+    * **Net Worth:** (if disclosed)
+
+    * **Financing Plan (if strong preferences):** (e.g., SBA loan, seller note, cash, investors, ROBS)
+
+    * **Bank / Lender Relationships:** (names allowed internally)
+
+    * **Prequalification Status:** (amount, lender, date)
+
+    * **Financial Guardrails:**  (FINANCIAL ONLY): Capture only the financial limits the client clearly states, such as maximum loan amount, debt comfort, payment limits, or financing constraints. Do NOT include location, licensing, operational, or lifestyle guardrails here. Do not invent or assume guardrails; only list what the client explicitly says or clearly frames as a financial limitation. If the client does not mention any financial guardrail, leave this section blank.
+
+    * **Comfort with Financial Risk:** (conservative / moderate / aggressive; plain English notes)
+  
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "3) Financial Profile (internal only)": {
+        "Minimum CashFlow/Income (Pre-Tax) After Debt Service Desired": "",
+        "Minimum CashFlow/Income (Post-Tax) After Debt Service Desired": "",
+        "Ideal Cashflow/Income (Pre-Tax) After Debt Service Desired": "",
+        "Ideal Cashflow/Income (Post-Tax) After Debt Service Desired": "",
+        "Total Cash Available": "",
+        "Planned Investment Amount": "",
+        "Net Worth": "",
+        "Financing Plan (if strong preferences)": [
+            ""
+        ],
+        "Bank / Lender Relationships": [
+            ""
+        ],
+        "Prequalification Status": "",
+        "Financial Guardrails": [
+            ""
+        ],
+        "Comfort with Financial Risk": ""
+    }
+    }
+  agent: sections_reviewer
+
+
+reviewing_section_business_characteristics_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **4\) Business Characteristics**
+
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.)
+    
+    Purpose: Capture the client’s underlying business preferences and operational comfort zones — details that guide how we search, screen, and filter potential acquisitions internally. These are not public criteria but internal signals about what types of businesses fit the client’s ideal profile. Treat them as guidelines, not strict exclusions
+
+    ## **4\) Business Characteristics**
+
+    * Preferred employee count / team structure: Describe the size and style of team the client is comfortable leading (e.g., “5–20 people,” “small team with clear roles,” or “larger team if managers are already in place”).
+
+
+    * Customer base preferences: Explain whether the client prefers B2B or B2C customers and how much customer concentration they can tolerate (e.g., “okay with 20–30% concentration,” “wants diverse customer base”).
+
+
+    * Growth profile: Identify whether the client prefers stable businesses, mild turnarounds, or stronger growth-mode companies (simple explanation, not jargon).
+
+
+    * Sales/marketing intensity tolerance: Clarify what level of sales or marketing work they can handle (e.g., “comfortable with outbound sales,” “prefers inbound-driven businesses,” “low marketing lift”).
+
+    * Operational complexity: Explain the type of operational environment they prefer (e.g., “single-site,” “multi-site with simple routines,” “field operations okay if routes predictable”).
+
+    * Asset-heavy vs. service-based: State whether they prefer businesses with equipment/fleet/physical assets or service-based models with lighter assets.
+
+    * Cultural fit: (values, seller legacy, family-owned vs. carve-out)
+
+    * Hidden NOs / soft preferences that we won’t publish: List quiet preferences that the client hinted at — things they do not want but did not say strongly enough to become “Hard NOs.” Keep it factual and simple.
+  
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "4) Business Characteristics (internal-only detail)": {
+        "Preferred employee count / team structure": [
+            ""
+        ],
+        "Customer base preferences": [
+            ""
+        ],
+        "Growth profile": [
+            ""
+        ],
+        "Sales/marketing intensity tolerance": [
+            ""
+        ],
+        "Operational complexity": [
+            ""
+        ],
+        "Asset-heavy vs. service-based": [
+            ""
+        ],
+        "Cultural fit": [
+            ""
+        ],
+        "Hidden NOs / soft preferences": [
+            ""
+        ]
+    }
+    }
+
+
+  agent: sections_reviewer
+
+
+reviewing_section_professional_background_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **5\) Professional Background**
+
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.)
+    
+    Purpose: Summarize the client’s professional background in a clear and practical way, so sellers, brokers, and lenders understand why the client can run or grow a business. Be explicit and easy to read, use short, direct phrases that clearly explain what each point means. Avoid all jargon. Make sure every line helps the reader quickly see how the client’s past experience, strengths, and leadership style connect to real acquisition opportunities.
+
+
+    ## **5\) Professional Background**
+
+    * **Career Overview:** 2–3 lines.
+
+    * **Industry Exposure:** Industries worked in or deeply familiar with.
+
+    * **Functional Strengths:** List the key business functions where the client has real, demonstrated experience (e.g., operations, sales, finance, marketing, product, customer service). Use simple, explicit phrases that explain what they actually did in those areas, not generic labels. Make sure each strength comes directly from what the client said or clearly described in the transcripts. If the client did not show experience in a function, do not include it.
+
+    * **Leadership & Management Experience:** Team size/type; decision scope.
+
+    * **Unique Abilities (Superpowers):** Short, concrete list (e.g., “stand up processes quickly,” “turn chaos into routines”).
+  
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+
+    {
+    "5) Professional Background": {
+        "Career Overview": [
+            ""
+        ],
+        "Industry Exposure": [
+            ""
+        ],
+        "Functional Strengths": [
+            ""
+        ],
+        "Leadership & Management Experience": [
+            ""
+        ],
+        "Unique Abilities (Superpowers)": [
+            ""
+        ]
+    }
+    }
+    
+    
+
+  agent: sections_reviewer
+
+
+reviewing_section_development_areas_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **6\) Development Areas**
+
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.)
+    
+    Purpose: Identify only the areas where the client may need additional support to move smoothly through the acquisition process. Describe skill gaps, confidence issues, or learning needs strictly based on what the client explicitly said or what is clearly observable in the transcripts. Never invent, assume, or add information that is not supported by the source material.
+
+    For each part, write a short, explicit explanation so the meaning is completely clear.
+
+    Note: When describing any skill gap, clearly specify whether it was self-identified by the client (something they explicitly mentioned) or inferred by the system (something deduced from the transcripts or conversations). This distinction helps maintain transparency and ensures the insights remain traceable and verifiable.
+
+    Example format:
+    Financial modeling depth – self-identified
+    Hiring managers process – inferred by system
+    Vendor negotiations – self-identified
+
+    ## **6\) Development Areas**
+
+    * Skills gaps needing support: List only real gaps the client mentioned or that can be confidently concluded from the transcripts. Use explicit, descriptive phrases that explain what the gap is and how it affects their readiness. Avoid vague or overly broad statements.
+      e.g., 
+       - financial modeling depth - self-identified 
+       - hiring managers - inferred by the system 
+       - vendor negotiations - self-identified
+
+
+    * Coaching/mentoring receptivity (what works best): Describe how the client responds to guidance based strictly on transcript evidence — for example, whether they ask clarifying questions, apply feedback quickly, prefer structured explanations, or need step-by-step support. Only include behaviors clearly visible in their interactions. Avoid assumptions about personality or learning style.
+  
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    
+    {
+    "6) Development Areas": {
+        "Skills gaps needing support": [
+            {
+                "Skill gap": "",
+                "Identified by": "",
+                "Description": ""
+            }
+        ],
+        "Coaching/mentoring receptivity (what works best)": [
+            ""
+        ]
+    }
+    }
+
+  agent: sections_reviewer
+
+
+reviewing_section_work_environment_fit_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **7\) Work Environment Fit**
+
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.)
+    
+    Purpose: Identify the type of day-to-day environment where the client naturally performs best and feels most energized, as well as the conditions that could lead to frustration or burnout. This section is about the surroundings, pace, and interpersonal dynamics of their ideal work setting — not about the type or stability of the business itself.
+
+    Be a bit more explicit in the descriptions to make sure the reader clearly understands what each point is saying.
+
+
+    Important clarification: Avoid mixing this section with Business Characteristics (e.g., “stable, established company” belongs there). Instead, focus here on aspects such as structure, collaboration style, autonomy, on-site vs. remote interaction, or the emotional and social climate where the client thrives.
+
+
+    ## **7\) Work Environment Fit**
+
+    * Preferred work environment (structured, people-centric, field-heavy, etc.)
+
+    * Work environments to avoid (chaotic, night/weekend heavy, complex regulatory)
+  
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "7) Work Environment Fit": {
+        "Preferred work environment": [
+            ""
+        ],
+        "Work environments to avoid": [
+            ""
+        ]
+    }
+    }
+
+  agent: sections_reviewer
+
+
+
+reviewing_section_deal_experience_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **8\) Deal Experience**
+
+    Updates in this section should follow the “Historical / Log” format. However, within this structure there is one important exception: the “Deals Reviewed” table. For this table, the system should keep a complete historical record of all deals reviewed, but ensure that each individual deal appears only once. When new information about a previously listed deal is provided, the system should merge the new details into the existing entry and update it to reflect the most recent and accurate insight, instead of creating duplicate rows.
+    All other subsections, such as “What went well,” “Challenges / freeze points,” “Learning curve,” and “Notes from transcripts/interactions”, should follow an evolution-based log, not a full accumulation. This means you must preserve only the insights that remain meaningful, relevant, or representative of the client’s ongoing patterns. Do not add every small detail from each transcript; include only the updates that genuinely reflect progression or change. Before adding anything new, please evaluate whether the insight:
+    - Adds meaningful value to understanding the client’s evolution,
+    - Represents a real change or pattern, not a one-off comment, and
+    - Is stronger or clearer than what already exists.
+
+
+    If the new insight meets these criteria, add it — but if it overlaps with, replaces, or contradicts an older entry, you must update or remove the older entry to avoid duplication and dilution. If a past item no longer reflects the client’s current behavior, motivations, or tendencies, delete it. These subsections should contain only the most relevant and still-true evolutionary insights, not a long-term historical archive.
+
+    
+    Purpose: Track the specific deals the client has reviewed over time — both before and during their work with AcquiMatch. This is a living log that shows how the client reacts to real opportunities. The goal is to understand what went well, where they struggled, and how their deal judgment improves with experience.
+    
+    Clarifications:
+    - Only include deals that are explicitly mentioned in transcripts, notes, or conversations. Do not invent or fill this section with assumptions.
+    - This section is meant to be a deal-by-deal tracker. List each deal reviewed and capture what happened with it.
+    - Describe the client’s reaction and progress in clear, simple phrases so anyone can understand the pattern.
+    - Always ensure the insights reflect the most recent behavior or feedback, not just early onboarding or calibration phases.
+    - If the client has not yet reviewed any deals up to the last transcript you processed, then you should leave the following subsections blank: What went well, Challenges / freeze points, Learning curve, and Notes from transcripts/interactions. These sections are designed to reflect insights directly related to deal reviews, so do not generate or infer anything unless there is clear evidence in the transcripts that the client has actually reviewed an AcquiMatch deal. Without that context, it does not make sense to fill these sections.
+
+    ## **8\) Deal Experience**
+
+    * **Deals reviewed:** Anonymized list of the deals the client looked at. Include short summaries with just enough detail to learn from them.  Table format:
+
+
+    |  Deal Name  |  Date of Last Update  |  Current Status / Notes |
+    |-------------|-----------------------|-------------------------|
+    |             |                       |                         |
+
+
+    * **What went well:** Strengths the client showed during the review of previous deals/business in sell. (list format)
+
+    * **Challenges / freeze points:**  Moments where the client hesitated, got stuck, or showed uncertainty about any buisness in sell. (list format)
+
+
+    * **Learning curve:**  What the client learned from these deals and how their approach is changing over time. (list format)
+
+
+    * **Notes from transcripts/interactions:** quick hits that matter. “Notes from interactions” refers only to observations from AcquiMatch conversations — not past experience outside our system. (list format)
+      
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    
+    {
+    "8) Deal Experience (evolving)": {
+        "Table": [
+            {
+                "Deal Name": "",
+                "Date of Last Update": "",
+                "Current Status / Notes": ""
+            }
+        ],
+        "What went well": [
+            ""
+        ],
+        "Challenges / freeze points": [
+            ""
+        ],
+        "Learning curve": [
+            ""
+        ],
+        "Notes from transcripts/interactions": [
+            ""
+        ]
+    }
+    }
+
+  agent: sections_reviewer
+
+
+reviewing_section_personal_and_family_context_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **9\) Personal and Family Context**
+
+    Updates in this section should be made according to the type “State / Snapshot” (Most Recent Only)
+    
+    Purpose: Capture the personal context and family dynamics that shape the client’s decision-making, motivation, and timing. This section helps ensure our recommendations and communications align with their broader life circumstances and priorities.
+    Note: Include key personal dates (e.g., birthdays, anniversaries) that may be relevant for maintaining strong relationships or planning communications.
+    When listing family members, include only what’s shared voluntarily and relevant to the acquisition journey (e.g., spouse’s role in decisions, dependent responsibilities).
+
+    ## **9\) Personal and Family Context**
+
+    * Spouse/partner (name if shared, profession if relevant)  
+      * **Role in Decisions:** (e.g., “Active in diligence” / “Final approval” / “Informed, not decision-maker”)
+
+    * Children/dependents (ages if relevant)
+
+    * Key dates (birthdays, anniversaries) for relationship/scheduling
+
+    * Lifestyle priorities: hours, travel, relocation boundaries
+
+    * Motivation (“why”) & long-term vision
+      
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "9) Personal & Family Context": {
+        "Spouse/partner (name if shared, profession if relevant)": [
+            ""
+        ],
+        "Role in Decisions": [
+            ""
+        ],
+        "Children/dependents (ages if relevant)": [
+            ""
+        ],
+        "Key dates (birthdays, anniversaries) for relationship/scheduling": [
+            ""
+        ],
+        "Lifestyle priorities: hours, travel, relocation boundaries": [
+            ""
+        ],
+        "Motivation & long-term vision": [
+            ""
+        ]
+    }
+    }
+
+  agent: sections_reviewer
+
+
+reviewing_section_interests_and_influences_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+
+    ## **10\) Interests and Influences**
+
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.)
+    
+    Purpose: Identify the client’s personal interests, inspirations, and influences that can strengthen rapport and help tailor communication style, tone, and relationship-building approaches. This section is for building connection, not overanalyzing personality.
+
+    ## **10\) Interests and Influences**
+
+    * Hobbies & personal interests
+
+    * Books / thought leaders referenced
+
+    * Podcasts / media influences
+
+    * Travel & leisure habits
+
+    * Community / social involvement: ( Only include this if the client explicitly says they attended, participated in, or are part of a community, group, event, or organization. Do not add anything based on assumptions, indirect mentions, or comments made by the AcquiMatch team. Capture only what the client themselves states clearly.
+      
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    
+    {
+    "10) Interests & Influences": {
+        "Hobbies & personal interests": [
+            ""
+        ],
+        "Books / thought leaders referenced": [
+            ""
+        ],
+        "Podcasts / media influences": [
+            ""
+        ],
+        "Travel & leisure habits": [
+            ""
+        ],
+        "Community / social involvement": [
+            ""
+        ]
+    }
+    }
+
+  agent: sections_reviewer
+
+
+reviewing_section_psychology_and_coaching_insights_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **11\) Psychology and Coaching Insights**
+
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.)
+    
+    Purpose: Capture how the client thinks, decides, and reacts under pressure so the team can guide them effectively through the acquisition journey. Focus only on traits that are clearly identifiable from the transcripts — decision-making pace, motivation drivers, communication style, and emotional triggers. Be explicit enough that the reader fully understands each point, but avoid overfilling the section. If something is not clearly supported by the transcripts, do not include it.
+    
+    Be more explicit in each description so the reader clearly understands what it means. Avoid overly short or vague phrases, keep the wording simple, but complete enough to make the meaning clear.
+
+    ## **11\) Psychology and Coaching Insights**
+
+    * **Decision-making style:** Do they decide quickly or slowly? Do they want options or full detail?
+
+    * **Motivators:** What drives them (legacy, stability, freedom, family, growth, impact)?
+
+    * **Fears / sensitivities:** What makes them hesitate (loss of money, risk, lack of clarity, team issues)?
+
+    * **Stress triggers:** Situations or phrases that make them feel overwhelmed.
+
+    * **Coping style:** How they reset when stressed (checklists, simplification, taking time, asking for guidance).
+
+    * **Preferred communication:** How they like info presented (direct, structured, big-picture first, checklists, etc.).
+
+    * **Development areas:** Emphasize specific behaviors or mindsets that may affect their ability to close a deal (e.g., fear of negotiation, overanalyzing, leading bigger teams). Keep the language simple and practical. The goal is to flag areas that may require attention, not to generate long lists or detailed coaching plans, just the key points that help the team understand where the client may need support.
+      
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "11) Psychology & Coaching Insights": {
+        "Decision-making style": [
+            ""
+        ],
+        "Motivators": [
+            ""
+        ],
+        "Fears / sensitivities": [
+            ""
+        ],
+        "Stress triggers": [
+            ""
+        ],
+        "Coping style": [
+            ""
+        ],
+        "Preferred communication": [
+            ""
+        ],
+        "Development areas": [
+            ""
+        ]
+    }
+    }
+  agent: sections_reviewer
+
+
+reviewing_section_behavioral_snapshot_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    
+    ## **11A\) Behavioral Snapshot**
+
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.)
+    
+    Purpose: Capture only the behavioral signals that are directly observable in the transcripts — how the client reacts, decides, asks questions, hesitates, or moves forward. Do not infer or assume anything that the transcripts do not clearly show. If there is nothing clearly identifiable yet, leave the section light rather than forcing content.
+
+    All fields in this section are connected and should reinforce each other. A behavioral signal should only appear if there is real evidence for it, and the related elements (confidence level, suggested coaching move, watch-out, and example) should only be included if the transcripts provide enough clarity to justify them.
+    Be explicit and clear in every description. Avoid overly short or vague lines, but also avoid adding unnecessary story or interpretation.
+
+    What is this section about?
+    * **Current signals:** Observed behaviors (e.g., “Decides fast when given 3 options; slows down if too many choices”).
+
+    * **Confidence level:** Low / Medium / High (based on how often we’ve seen the same signal).
+
+    * **Coaching moves that work:** What helps them move forward (e.g., “Lead with downside first; always confirm next steps on call”).
+
+    * **Watch-outs:** What to avoid (e.g., “Don’t give 6+ options,” “Don’t leave next steps vague”).
+
+    * **Recent examples:** Add only concrete, date-stamped moments from the transcripts where a specific behavior was visible. Use a simple format: Date + quote or behavior + what it means. If there was a clear coaching action taken and it had an observable effect on the client, include it. If not, leave it out. Do not create examples, coaching moments, or interpretations that are not explicitly supported by the transcripts. If you do not find any valid examples, leave this field empty — no hallucinating, no inventing content just to fill space.
+
+    ## **11A\) Behavioral Snapshot**
+
+
+    1) Signal:
+    - Confidence level:
+    - Coaching moves that work:
+    - Watch-outs:
+    - Recent examples:
+
+    2) Signal:
+    - Confidence level:
+    - Coaching moves that work:
+    - Watch-outs:
+    - Recent examples:
+
+    3) Signal:
+    - Confidence level:
+    - Coaching moves that work:
+    - Watch-outs:
+    - Recent examples:
+    ...
+
+
+      
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "11A) Behavioral Snapshot": [
+        {
+            "Signal": "",
+            "Confidence level": "",
+            "Coaching moves that work": [
+                ""
+            ],
+            "Watch-outs": [
+                ""
+            ],
+            "Recent examples": [
+                ""
+            ]
+        }
+    ]
+    }
+
+  agent: sections_reviewer
+
+
+reviewing_section_business_fit_evaluation_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **12\) Business Fit Evaluation**
+
+    Updates in this section should be made according to the type “State / Snapshot” (Most Recent Only)
+    
+    Purpose: Provide a quick, structured snapshot of how well the client aligns with the key demands of different types of businesses. Each category should be rated from 1 to 5, where 1 indicates low alignment or potential challenge, and 5 reflects strong alignment or readiness. Include short, plain-language notes explaining the score. The goal is not to pass or fail the client but to anticipate where friction or obstacles might appear during deal evaluation — and where the client is naturally strong. This helps guide coaching focus and fit conversations with sellers and brokers.
+
+    Be more explicit in each description so the reader clearly understands what it means. Avoid overly short or vague phrases, keep the wording simple, but complete enough to make the meaning clear.
+
+    ## **12\) Business Fit Evaluation**
+
+    * Leadership match
+
+    * Resilience / grit alignment
+
+    * Complexity tolerance (ops, compliance, multi-site)
+
+    * Operational energy (field time, people intensity)
+
+    * Values alignment (legacy, community, employees)
+      
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "12) Business Fit Evaluation (simple scoring)": {
+        "Leadership match": {
+            "Score": "",
+            "Notes": [
+                ""
+            ]
+        },
+        "Resilience / grit alignment": {
+            "Score": "",
+            "Notes": [
+                ""
+            ]
+        },
+        "Complexity tolerance (ops, compliance, multi-site)": {
+            "Score": "",
+            "Notes": [
+                ""
+            ]
+        },
+        "Operational energy (field time, people intensity)": {
+            "Score": "",
+            "Notes": [
+                ""
+            ]
+        },
+        "Values alignment (legacy, community, employees)": {
+            "Score": "",
+            "Notes": [
+                ""
+            ]
+        }
+    }
+    }
+
+  agent: sections_reviewer
+
+
+reviewing_section_interaction_notes_and_red_flags_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **13\) Interaction Notes and Red Flags**
+
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.)
+    Please apply updates with balance: do not drastically rewrite or empty the section with each transcript. Only adjust or remove older items when the new information clearly replaces, contradicts, or significantly improves them. If the existing content is still valid and useful, keep it. In other words, evolve the section with judgment, refine what needs updating, preserve what remains relevant, and avoid both over-accumulation and over-deletion.
+    
+    Purpose: Capture insights on how to collaborate effectively with the client across all communications and decision-making. This section is not deal-specific — it’s about how the client works. Document the most relevant recurring patterns, behaviors, or tendencies that help the team build smoother interactions, anticipate challenges, and position guidance effectively. Avoid creating an overly long list — include only the most important points that truly help us understand the client.
+
+    ## **13\) Interaction Notes and Red Flags**
+
+    * Decision & communication patterns (Note how the client processes information, makes decisions, and prefers to communicate. (e.g., “Needs examples before deciding,” “Responds faster to visual summaries than long emails,” “Prefers live discussion over written feedback.”)
+
+
+    * Red flags (Identify potential biases, blind spots, or tendencies that could slow progress or cause confusion. (e.g., “Overanalyzes small details,” “Struggles to delegate,” “Avoids financial discussions.”)
+
+
+    * Opportunities (Highlight ways the team can engage or position insights for best results. (e.g., “Frame options around impact on people,” “Give structured next steps,” “Recognize wins publicly to build trust.”)
+      
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "13) Interaction Notes & Red Flags": {
+        "Decision & communication patterns": [
+            ""
+        ],
+        "Red flags (biases, blind spots)": [
+            ""
+        ],
+        "Opportunities (where they shine if positioned well)": [
+            ""
+        ]
+    }
+    }
+  agent: sections_reviewer
+
+
+reviewing_section_at_a_glance_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **14\) At-a-Glance**
+
+    Updates in this section should be made according to the type “State / Snapshot” (Most Recent Only)
+    
+    Purpose: Provide a quick, actionable snapshot of what industries and business types are currently in play for this client. This section helps the team, and the AI, know where to focus searches, what has already been explored, and what to avoid. Keep it short enough that anyone can understand the client’s direction in 10 seconds. Updated as the client evolves (what’s been done / what’s next). 
+
+    This section refers to off-market outreach, which is a separate AcquiMatch process where we contact businesses directly to determine whether they’re interested in selling. If you receive any information that explicitly refers to off-market, you can update it here. Otherwise, leave this section unchanged.
+
+
+    ## **14\) At-a-Glance**
+
+    * Current focus (this month): List 1–2 industries that are the active priority right now.
+
+
+    * Next up (queued): [1–2 industries]
+
+
+    * Recently covered (last 2 months): Note industries or business types already explored, with a quick outcome (e.g., “Manufacturing – too capital heavy,” “IT services – promising, still reviewing”).
+
+
+    * Hard NOs: [from Business Characteristics form]
+    * Open Pool (after NOs): List all industries or segments that remain viable and in-bounds (Can be used by AI when generating Top 20).
+
+      
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "14) At-a-Glance (what’s been done / what’s next)": {
+        "Current focus (this month)": [
+            ""
+        ],
+        "Next up (queued)": [
+            ""
+        ],
+        "Recently covered (last 2 months)": [
+            ""
+        ],
+        "Hard NOs": [
+            ""
+        ],
+        "Open Pool (after NOs)": [
+            ""
+        ]
+    }
+    }
+    
+
+  agent: sections_reviewer
+
+
+
+
+
+
+reviewing_section_client_stated_excitement_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    ## **15\) Client-Stated Excitement**
+    
+
+    Updates in this section should be made according to the type “State / Snapshot” (Most Recent Only)
+    
+    What this is: Capture what genuinely excites the client, in their own words, so we can align searches with their motivation, not just the numbers. This section helps ensure we understand what energizes them and why, while still checking that these interests make practical sense. Use plain language and real quotes whenever possible.
+
+    ## **15\) Client-Stated Excitement**
+
+    (table format, generate as many sequential rows as needed (Rank 4, 5, 6, …) until all items are covered.)
+
+    | Rank | Industry / Model | Why client is excited (quote/summary) | Notes / caveats |
+    | ---- | ----------------- | ------------------------------------- | ---------------- |
+    | 1 |  |  |  |
+    | 2 |  |  |  |
+    | 3 |  |  |  |
+    | ... |  |  |  |
+
+      
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "15) Client-Stated Excitement (ranked list)": { 
+        "Table":[
+            {
+                "Rank": "",
+                "Industry / Model": "",
+                "Why client is excited (quote/summary)": "",
+                "Notes / caveats": ""
+            }
+        ]
+    }
+    }
+
+
+  agent: sections_reviewer
+
+
+reviewing_section_recommended_business_types_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section" (In this case section 16 and its subsections 16.1, 16.2, and 16.3):
+    
+    ## **16\) Recommended Business Types**
+
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.). 
+
+    Purpose: Give the team a clear, quick way to understand where and why we’re focusing. Each section includes short, teachable examples so anyone — regardless of background — can see the logic behind the recommendations. Use Bullet points in the sections to make the structure more understandable.
+    
+    16.1 Best-Suited Categories
+    What it is: Industries or business models that fit the client’s skills, interests, and financial profile.
+    Why it matters: Keeps searches focused where the client is most likely to succeed and stay engaged.
+    Examples (format/style):
+    “Property management — recurring revenue; vendor/tenant ops map to client’s ops background.”
+
+
+    “Children’s education/activity centers — leverages leadership and community orientation.”
+
+
+    16.2 Strategic Opportunities
+    What it is: Nearby industries that the client didn’t mention but naturally fit their experience or goals.
+    Why it matters: Helps broaden options while staying within their comfort and success zone.
+    Examples:
+    “Commercial cleaning — adjacency to property management; similar ops cadence; strong recurring revenue.”
+
+
+    “Wellness technology platforms — bridges SaaS/tech experience with fitness/wellness interest.”
+
+
+    16.3 Avoid Categories
+    [bulleted list automatically mirroring the “Hard NOs” list from Section 14 (Section called "At a Glance". Check the context coming from the task reviewing_section_at_a_glance_task); just add a short reason here (no separate lists).]
+    What it is: Industries or models that clearly don’t fit, whether due to risk, lifestyle, complexity, or personal preference.
+    Why it matters: Saves time, avoids frustration, and keeps focus on realistic, energizing opportunities.
+    Source of truth: Automatically mirrors the “Hard NOs” list from Section 14 (Section called "At a Glance". Check the context coming from the task reviewing_section_at_a_glance_task); just add a short reason here (no separate lists).   In addition to those items, you can include any other industries or business types that are clearly and explicitly ruled out in the transcripts. Do not infer or add anything that isn’t directly supported. This list should represent firm, non-negotiable exclusions based on Business Characteristics and confirmed internal callouts. (Add or refine with judgment, do not accumulate noise.) DO NOT REMOVE ANY CATEGORY unless the transcript explicitly states that the client is now open to that category. Otherwise, keep all existing categories intact. You may add new categories only if the client clearly says they are not interested in a specific industry.
+
+     Examples:
+    “Healthcare — licensing/regulatory burden exceeds client’s appetite.”
+
+
+    “Restaurants — low margins; weekend-heavy operations not aligned with lifestyle.”
+
+
+      
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+
+    {
+    "16) Recommended Business Types": {
+        "16.1 Best-Suited Categories": [
+            ""
+        ],
+        "16.2 Strategic Opportunities": [
+            ""
+        ],
+        "16.3 Avoid Categories": [
+            ""
+        ]
+    }
+    }
+
+  agent: sections_reviewer
+  context:
+    - reviewing_section_at_a_glance_task
+
+
+reviewing_section_analyst_ai_fit_recommendations_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":
+
+    
+    ## **17\) Analyst/AI Fit Recommendations — Ranked Top 20**
+
+    Updates in this section should be made according to the type “State / Snapshot” (Most Recent Only)
+    
+    Purpose: Provide a clear, ranked roadmap for the sourcing and client teams — showing where to focus first based on a balanced view of fit, excitement, and risk. This section helps everyone quickly understand why each opportunity ranks where it does and what needs to happen next.
+
+    Be more explicit in each description so the reader clearly understands what it means. Avoid overly short or vague phrases, keep the wording simple, but complete enough to make the meaning clear.
+    
+    Scoring guidance (keep it simple and transparent):
+
+    Fit score (0–5): Measures alignment between business model and client’s capabilities, operations experience, and financial range. What to Consider: Skills/experience transfer, operational complexity, financial band (SDE), geography/travel, work environment fit.
+
+
+    Excitement score (0–5): Reflects how much the client personally resonates with the model or industry. Pull directly from Section 15 “Client-Stated Excitement.”
+
+
+    Risk flags (−2 to 0): Adjusts score for key risk factors. What to Consider: regulation, cyclicality, labor intensity, capital intensity, seasonality, customer concentration.
+    Combined score (Formula): Fit × 0.6 + Excitement × 0.4 + Risk flags = Final number used to rank Top 20. This final score is the one you must include in the table. The greater the score, the better the fit and rank.
+    Note: Include a short summary of how the score was derived for each industry to keep evaluation consistent. 
+
+    ## **17\) Analyst/AI Fit Recommendations — Ranked Top 20**
+
+    | Rank | Industry / Model | Why it fits (1–2 lines) | Key match factors (• bullets) | Risk flags | Score |
+    | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+    | 1 |  |  |  | • … • … |  |  |
+    | … |  |  |  |  |  |  |
+    | 20 |  |  |  |  |  |  |
+
+
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "17) Analyst/AI Fit Recommendations — Ranked Top 20":{ 
+        "Table":[
+            {
+                "Rank": "",
+                "Industry / Model": "",
+                "Why it fits (1–2 lines)": "",
+                "Key match factors": [
+                    ""
+                ],
+                "Risk flags": "",
+                "Score": ""
+            }
+        ]
+    }
+    }
+
+  agent: sections_reviewer
+  context:
+    - reviewing_section_at_a_glance_task
+    - reviewing_section_client_stated_excitement_task
+
+
+reviewing_section_low_fit_or_misfit_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+
+    ## **18\) Low-Fit / Misfit (even if client says “open”)**
+
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.)
+    
+    Purpose: Define clear guardrails to prevent time spent on businesses that appear viable but are poor matches in reality. This section helps the team and client stay disciplined — acknowledging that “interest” doesn’t always equal “fit.”
+    Common reasons: heavy licensing, nights/weekends vs family needs, high turnover labor, complex compliance, extreme seasonality, capital cycles beyond comfort, fragile supply chains.
+
+    ## **18\) Low-Fit / Misfit (even if client says “open”)**
+
+    | Category | Why it’s a misfit (plain English) | Example red flags to watch |
+    | ----- | ----- | ----- |
+    |  |  |  |
+
+
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "18) Low-Fit / Misfit (even if client says “open”)": {
+        "Table": [
+            {
+                "Category": "",
+                "Why it’s a misfit (plain English)": "",
+                "Example red flags to watch": ""
+            }
+        ],
+        "Notes": [
+            ""
+        ]
+    }
+    }
+
+  agent: sections_reviewer
+
+
+
+reviewing_section_avoid_categories_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":    
+
+    
+    ## **19\) Avoid Categories**
+    
+    Updates in this section should be made according to the type “Hybrid / Judgment-Based” (Add or refine with judgment, do not accumulate noise.)
+
+    Purpose: Document the industries or business types that are fully out of bounds for this client, with a short, plain-English rationale for each. This list represents firm exclusions (from Business Characteristics + internal callouts).
+
+
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    
+    ## **19\) Avoid Categories**
+
+    * \[Industry\] — \[reason\]
+
+    * \[Industry\] — \[reason\]
+
+    * \[Industry\] — \[reason\]
+
+  agent: sections_reviewer
+
+
+
+reviewing_section_outreach_tracker_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    You will not change this section. You must output the same section exactly as provided.
+
+    The section is the one named:
+    ## **20\) Outreach Tracker (status log)**
+
+    It is a table that logs all outreach activities, their dates, outcomes, and next steps. Only human analyst must update this section when outreach occurs. You just need to output it as is.
+
+
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+  expected_output: >
+    output the same section exactly as provided.
+    {
+    "20) Outreach Tracker (status log)": {
+        "Table": [
+            {
+                "Month": "",
+                "Industry": "",
+                "Leads contacted": "",
+                "Lead list size": "",
+                "Responses": "",
+                "Calls": "",
+                "Write Ups": ""
+            }
+        ]
+    }
+    }
+
+
+  agent: sections_reviewer
+
+
+
+reviewing_section_evolution_tracking_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section" (In this case section Evolution Tracking and its subsections "Preference Changes", "Learning and Growth Areas", and "Success Patterns"):
+    
+    
+    ## **21\) Evolution Tracking (living section)**
+
+    Evolution Tracking → Hybrid Log
+    This section is a living record of the client’s evolution, but it should reflect true progression, not simply accumulate everything forever. Each update must capture what has changed — the “delta” — and include a timestamp, but outdated insights should be refined or removed when they no longer represent the client’s current behavior or trajectory.
+    If earlier insights have become irrelevant, have been superseded by new behavior, or no longer provide value in understanding the client, you should update or delete them accordingly. Keep only the historical elements that still matter, clarify patterns, or help explain the evolution path. Everything else should be cleaned out so the section remains accurate, current, and genuinely useful.
+    The purpose is to show how the client develops over time, not to freeze every old observation permanently. When new behavior contradicts, replaces, or meaningfully updates an earlier pattern, the system should adjust the older insight accordingly instead of keeping both versions. Only keep historical entries that remain relevant or help explain the evolution path; discard or update past items that no longer add value to understanding the client.
+
+
+    Purpose: Track meaningful shifts in the client’s goals, mindset, or deal criteria — not the whole history, just what changed and why it matters. Focus on updates that directly impact sourcing strategy, fit scoring, or coaching approach. Keep entries clear, timestamped, and actionable for the team.
+
+    
+
+    ## **21\) Evolution Tracking (living section)**
+
+
+    ### **21.1. Preference Changes (timestamped deltas)**
+    Date:
+    Key Moment / Trigger: (e.g., “LOI fell through due to financing → increased loss aversion language”)
+    Trigger / evidence: (call note, transcript snippet, market learning)
+    Impact: (e.g., raise/lower SDE band; promote/demote industries in Top 20; geography expand/contract)
+
+
+    ### **21.2. Learning & Growth Areas**
+    Date:
+    New capability or mindset shift:
+    Evidence: (deal review, exercise, transcript)
+    Support needed / next coaching step: (tool, checklist, mentor intro)
+
+
+    ### **21.3. Success Patterns**
+    Date:
+    Resonates: (business traits that spark momentum)
+    Repels: (traits that stall or kill interest)
+    Implication for recommendations: (adjust Best-Suited / Strategic / Low-Fit)
+
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    
+    {
+    "21) Evolution Tracking (living section)": {
+        "Preference Changes (timestamped deltas)": [
+            {
+            "Date": "",
+            "Key Moment / Trigger": "",
+            "Trigger / evidence": "",
+            "Impact": ""
+            }
+        ],
+        "Learning & Growth Areas": [
+            {
+            "Date": "",
+            "New capability or mindset shift": "",
+            "Evidence": "",
+            "Support needed / next coaching step": ""
+            }
+        ],
+        "Success Patterns": [
+            {
+            "Date": "",
+            "Resonates": "",
+            "Repels": "",
+            "Implication for recommendations": ""
+            }
+        ]
+    }
+    }
+
+
+  agent: sections_reviewer
+
+
+
+
+reviewing_section_psychology_signals_since_last_update_task:
+  description: >
+    You will receive:
+    - The full internal client profile.
+    - The transcript of a video call with the client.
+    - The specific section you are responsible for updating (referred to below as "Your Assigned Section").
+
+    Your job is to review and update ONLY Your Assigned Section based on new information found in the transcript.
+
+    STRICT RULES:
+    - Do NOT modify, rewrite, summarize, or touch any other section of the profile.
+    - Preserve the exact formatting, titles, headings, and internal structure of Your Assigned Section.
+    - Apply only the minimal updates necessary to keep the section accurate and consistent with the transcript.
+    - Your output MUST be ONLY the updated version of Your Assigned Section, not the entire profile.
+    - If no updates are required, output the original section exactly as provided.
+    - The transcript should only be used to verify or update relevant information, never to rewrite unrelated content.
+
+    Below is the name and context of the section you must monitor and update. This is "Your Assigned Section":
+    
+    
+    ## **22\) Psychology Signals Since Last Update**
+
+    Updates in this section should be made according to the type “State / Snapshot” (Most Recent Only)
+
+    Purpose: Summarize changes in inferred style that matter for deal flow. Use the Evidence Log format from section "Behavioral Snapshot" (coming from reviewing_section_behavioral_snapshot_task); include confidence.
+    Capture recent psychological and behavioral shifts that affect how we communicate, coach, and source deals. Focus on actionable insights — what’s changed in how the client thinks or reacts, supported by clear evidence and confidence level. Keep it short and practical so sourcing can instantly see what matters now and adjust tone, pacing, or deal framing accordingly.
+
+    ## **22\) Psychology Signals Since Last Update**
+
+
+    - Signal: (e.g., stronger loss aversion language under time pressure)
+
+
+      - Evidence & date:
+      - Confidence: Low / Med / High
+      - Coaching move: (how we’ll present/sequence info next time)
+    
+    ### **Two-Line Rollup (auto/curated)**
+
+    - Summary (3 bullets max):
+      - [One preference change]
+      - [One success pattern]
+      - [One psych/coaching note]
+
+
+    - Action:
+      - Top 20 adjustment: (who moved up/down; why)
+      - Sourcing focus next month: [1–2 industries] → reflected in §15 “At-a-Glance”
+
+
+    Below is the full internal profile of the client:
+
+     {internal_profile}
+
+    Below is the whole context about the client that you have to use to extract the information needed to update the section. Focus on both:
+    {raw_updates}
+    {external_profile}
+  expected_output: >
+    ONLY the updated version of "Your Assigned Section" preserving its structure, titles, and formatting. Apply JSON format. If no changes are needed, return the section exactly as received, unchanged.
+
+    You MUST output valid, strictly-parseable JSON.
+
+    Rules you must follow exactly:
+
+    Output JSON only.
+
+    No markdown
+
+    No explanations
+
+    No comments
+
+    No trailing text
+ 
+    The entire output must be a single JSON object.
+
+    All keys and all string values must be enclosed in double quotes (").
+
+    Never include unescaped double quotes inside strings.
+
+    If a quote is needed inside a string, escape it as \"
+
+    Do NOT use smart quotes (“ ” ‘ ’). If found, convert them to escaped standard quotes (\") or rewrite the sentence to remove quotes
+    Use only standard ASCII quotes (").
+
+    Do NOT include Markdown formatting, bullet points, headings, or separators.
+
+    Do NOT include trailing commas.
+
+    Line breaks are allowed only inside strings if properly escaped (\n).
+
+    If the content contains natural language, treat it as plain text inside a string.
+
+    If you are unsure whether something is valid JSON, rewrite it to make it valid JSON.
+
+    If you cannot produce valid JSON, output an empty JSON object {} instead.
+
+    Before responding, validate your output mentally as JSON.
+    If it would fail json.loads(), fix it before outputting.
+
+
+    THIS IS THE STRUCTURE YOU MUST FOLLOW:
+    {
+    "22) Psychology Signals Since Last Update": {
+        "Signals": [
+            {
+            "Signal": "",
+            "Evidence & date": "",
+            "Confidence": "",
+            "Coaching move": ""
+            }
+        ],
+        "Two-Line Rollup (auto/curated)": {
+            "Summary (3 bullets max)": [
+            ""
+            ],
+            "Action": {
+                "Top 20 adjustment": "",
+                "Sourcing focus next month": ""
+            }
+        }
+    }
+    }
+
+   
+  agent: sections_reviewer
+  context:
+    - reviewing_section_behavioral_snapshot_task
+    - reviewing_section_at_a_glance_task
+
+
+assembling_sections_task:
+  description: >
+
+    You are a strict JSON normalization and restructuring engine.
+
+    You do NOT generate new content.
+    You do NOT improve, summarize, rewrite, paraphrase, or reinterpret text.
+
+    Your only responsibility is to normalize structure and escaping so the output is valid JSON.
+
+
+    
+
+
+
+    You are a data transformation assistant.
+
+    Your task is to **convert a structured Document client profile** into a **strictly formatted JSON document** following the template provided below.
+
+    ### 🎯 OBJECTIVE
+    Transform the Document content into a JSON object that matches the JSON schema exactly — in structure, nesting, key names, and field types — without summarizing, interpreting, or omitting any information.
+
+    Every piece of content in the Document must be captured in the corresponding JSON field, keeping:
+    - The same meaning, tone, and detail.
+    - Table rows converted into arrays of objects.
+    - Empty or missing fields represented as empty strings `""`, arrays `[]`, or empty objects `{}` as in the template.
+    - Field names **in snake_case**, exactly as defined in the template.
+
+    Do not add extra keys, abbreviate, merge, or rephrase any content.
+
+    ---
+
+    ### 🧱 CONVERSION RULES
+
+
+    1. **Preserve data completeness:**  
+    All data, even if repeated, must appear in the JSON. Do not summarize, omit, or reinterpret.
+
+
+    2. **Plain text fields:**  
+    - Keep all content as raw text (no Markdown formatting like `**bold**` or `_italics_`).  
+    - Combine multiline content into a single string separated by spaces or line breaks.
+
+    3. **Numeric and date values:**  
+    - Keep them as strings (e.g., `"2024-05-03"`, `"12"`) to preserve consistency.
+
+    4. **If a section is not present in the Document:**  
+    - Leave all its fields as empty strings or empty arrays as per the template.
+
+    5. **Do not alter structure or add commentary.**  
+    The output must be **valid JSON**, ready for parsing, with no extra explanations, text, or Markdown.
+
+    You will receive as context from other all tasks the following input:
+
+    A sequence of multiple JSON or pseudo-JSON sections concatenated together.
+    These sections may:
+    - Be malformed or partially invalid
+    - Contain smart/curly quotes (“ ” ‘ ’)
+    - Contain unescaped quotes inside string values
+    - Contain raw newlines or tabs inside strings
+    - Contain Markdown artifacts
+    - Be partial objects or loose key–value fragments
+    - Contain structural errors that would break a JSON parser
+
+    ---
+
+    YOUR TASK:
+
+    1. Parse and interpret each individual section from USER INPUT, even if malformed.
+    2. Normalize formatting ONLY:
+    - Replace smart/curly quotes with standard ASCII double quotes (").
+    - Escape all quotes that appear inside string values as \"
+    - Escape newlines as \\n
+    - Escape tabs as \\t
+    - Remove or escape invalid control characters.
+    3. Convert each section into a syntactically valid JSON value.
+    4. Insert each section into the correct position in the final JSON, following the JSON template.
+    5. Preserve the original content **byte-for-byte in meaning**.
+
+    ---
+
+    CONTENT PRESERVATION RULES (ABSOLUTE):
+
+    - Do NOT summarize.
+    - Do NOT shorten.
+    - Do NOT paraphrase.
+    - Do NOT reword.
+    - Do NOT reorder sentences inside values.
+    - Do NOT “clean up” language.
+    - Do NOT infer or add missing context.
+    - Do NOT delete emphasis, hedging, or repetition.
+    - If text is unclear, keep it exactly as-is.
+    - The ONLY allowed modifications are character escaping and structural fixes required for valid JSON.
+
+    If the model alters meaning in any way, the output is INVALID.
+
+    ---
+
+    EDGE CASE RULES:
+
+    - If a section does not perfectly match the template, map it to the closest semantic key WITHOUT modifying its content.
+    - If a section is missing entirely, output an empty value matching the template type.
+    - If multiple fragments belong to the same section, concatenate them in original order with escaped newlines (\\n).
+
+    ---
+
+    OUTPUT RULES (CRITICAL):
+
+    - Output ONLY raw JSON.
+    - No Markdown.
+    - No comments.
+    - No explanations.
+    - No trailing commas.
+    - Use only ASCII double quotes (").
+    - Do NOT include smart quotes.
+    - Do NOT include raw newlines or tabs inside strings.
+    - All string content must be JSON-escaped.
+    - The output must be valid according to RFC 8259.
+
+    Before responding, internally validate that the JSON parses successfully.
+    If it does not, fix it before outputting.
+
+    ---
+
+    ### 🧪 OUTPUT VALIDATION REQUIREMENTS
+
+    - Must be **valid JSON** (parsable with standard JSON parsers).  
+    - Must include **all keys** present in the template, even if empty.  
+    - Must not include any Markdown formatting.  
+    - Must not include the template itself or any extra commentary.  
+    - Output only the JSON object.
+
+    ---
+
+
+    
+  expected_output: >
+    This is the JSON template you must follow to assemble the final internal profile. Fill in each section with the updated content provided by the Sections Reviewer agents. Ensure that all sections are correctly formatted, consistent in style, and adhere to the specified guidelines for clarity and simplicity. The final JSON should be correctly nested, free of errors, parseable, and ready for use by the AcquiMatch team.
+
+    {
+        "1) Client Overview & Status": {
+            "Client Name": "",
+            "Search Start Date": "",
+            "Location (Home Base)": "",
+            "Timezone": "",
+            "Current Status": "",
+            "Decision Makers": "",
+            "High Level Important Note": "",
+            "Profile Maintained By": "",
+            "Logs": [
+                ""
+            ]
+        },
+        "2) Search Parameters": {
+            "Client Intro": "",
+            "Target Business Size": [
+                ""
+            ],
+            "Geography": [
+                ""
+            ],
+            "Industry Approach": [
+                ""
+            ],
+            "Business Characteristics": [
+                ""
+            ]
+        },
+        "3) Financial Profile (internal only)": {
+            "Minimum CashFlow/Income (Pre-Tax) After Debt Service Desired": "",
+            "Minimum CashFlow/Income (Post-Tax) After Debt Service Desired": "",
+            "Ideal Cashflow/Income (Pre-Tax) After Debt Service Desired": "",
+            "Ideal Cashflow/Income (Post-Tax) After Debt Service Desired": "",
+            "Total Cash Available": "",
+            "Planned Investment Amount": "",
+            "Net Worth": "",
+            "Financing Plan (if strong preferences)": [
+                ""
+            ],
+            "Bank / Lender Relationships": [
+                ""
+            ],
+            "Prequalification Status": "",
+            "Financial Guardrails": [
+                ""
+            ],
+            "Comfort with Financial Risk": ""
+        },
+        "4) Business Characteristics (internal-only detail)": {
+            "Preferred employee count / team structure": [
+                ""
+            ],
+            "Customer base preferences": [
+                ""
+            ],
+            "Growth profile": [
+                ""
+            ],
+            "Sales/marketing intensity tolerance": [
+                ""
+            ],
+            "Operational complexity": [
+                ""
+            ],
+            "Asset-heavy vs. service-based": [
+                ""
+            ],
+            "Cultural fit": [
+                ""
+            ],
+            "Hidden NOs / soft preferences": [
+                ""
+            ]
+        },
+        "5) Professional Background": {
+            "Career Overview": [
+                ""
+            ],
+            "Industry Exposure": [
+                ""
+            ],
+            "Functional Strengths": [
+                ""
+            ],
+            "Leadership & Management Experience": [
+                ""
+            ],
+            "Unique Abilities (Superpowers)": [
+                ""
+            ]
+        },
+        "6) Development Areas": {
+            "Skills gaps needing support": [
+                {
+                    "Skill gap": "",
+                    "Identified by": "",
+                    "Description": ""
+                }
+            ],
+            "Coaching/mentoring receptivity (what works best)": [
+                ""
+            ]
+        },
+        "7) Work Environment Fit": {
+            "Preferred work environment": [
+                ""
+            ],
+            "Work environments to avoid": [
+                ""
+            ]
+        },
+        "8) Deal Experience (evolving)": {
+            "Table": [
+                {
+                    "Deal Name": "",
+                    "Date of Last Update": "",
+                    "Current Status / Notes": ""
+                }
+            ],
+            "What went well": [
+                ""
+            ],
+            "Challenges / freeze points": [
+                ""
+            ],
+            "Learning curve": [
+                ""
+            ],
+            "Notes from transcripts/interactions": [
+                ""
+            ]
+        },
+        "9) Personal & Family Context": {
+            "Spouse/partner (name if shared, profession if relevant)": [
+                ""
+            ],
+            "Role in Decisions": [
+                ""
+            ],
+            "Children/dependents (ages if relevant)": [
+                ""
+            ],
+            "Key dates (birthdays, anniversaries) for relationship/scheduling": [
+                ""
+            ],
+            "Lifestyle priorities: hours, travel, relocation boundaries": [
+                ""
+            ],
+            "Motivation & long-term vision": [
+                ""
+            ]
+        },
+        "10) Interests & Influences": {
+            "Hobbies & personal interests": [
+                ""
+            ],
+            "Books / thought leaders referenced": [
+                ""
+            ],
+            "Podcasts / media influences": [
+                ""
+            ],
+            "Travel & leisure habits": [
+                ""
+            ],
+            "Community / social involvement": [
+                ""
+            ]
+        },
+        "11) Psychology & Coaching Insights": {
+            "Decision-making style": [
+                ""
+            ],
+            "Motivators": [
+                ""
+            ],
+            "Fears / sensitivities": [
+                ""
+            ],
+            "Stress triggers": [
+                ""
+            ],
+            "Coping style": [
+                ""
+            ],
+            "Preferred communication": [
+                ""
+            ],
+            "Development areas": [
+                ""
+            ]
+        },
+        "11A) Behavioral Snapshot": [
+            {
+                "Signal": "",
+                "Confidence level": "",
+                "Coaching moves that work": [
+                    ""
+                ],
+                "Watch-outs": [
+                    ""
+                ],
+                "Recent examples": [
+                    ""
+                ]
+            }
+        ],
+        "12) Business Fit Evaluation (simple scoring)": {
+            "Leadership match": {
+                "Score": "",
+                "Notes": [
+                    ""
+                ]
+            },
+            "Resilience / grit alignment": {
+                "Score": "",
+                "Notes": [
+                    ""
+                ]
+            },
+            "Complexity tolerance (ops, compliance, multi-site)": {
+                "Score": "",
+                "Notes": [
+                    ""
+                ]
+            },
+            "Operational energy (field time, people intensity)": {
+                "Score": "",
+                "Notes": [
+                    ""
+                ]
+            },
+            "Values alignment (legacy, community, employees)": {
+                "Score": "",
+                "Notes": [
+                    ""
+                ]
+            }
+        },
+        "13) Interaction Notes & Red Flags": {
+            "Decision & communication patterns": [
+                ""
+            ],
+            "Red flags (biases, blind spots)": [
+                ""
+            ],
+            "Opportunities (where they shine if positioned well)": [
+                ""
+            ]
+        },
+        "14) At-a-Glance (what’s been done / what’s next)": {
+            "Current focus (this month)": [
+                ""
+            ],
+            "Next up (queued)": [
+                ""
+            ],
+            "Recently covered (last 2 months)": [
+                ""
+            ],
+            "Hard NOs": [
+                ""
+            ],
+            "Open Pool (after NOs)": [
+                ""
+            ]
+        },
+        "15) Client-Stated Excitement (ranked list)": { 
+            "Table":[
+                {
+                    "Rank": "",
+                    "Industry / Model": "",
+                    "Why client is excited (quote/summary)": "",
+                    "Notes / caveats": ""
+                }
+            ]
+        },
+        "16) Recommended Business Types": {
+            "16.1 Best-Suited Categories": [
+                ""
+            ],
+            "16.2 Strategic Opportunities": [
+                ""
+            ],
+            "16.3 Avoid Categories": [
+                ""
+            ]
+        },
+        "17) Analyst/AI Fit Recommendations — Ranked Top 20":{ 
+            "Table":[
+                {
+                    "Rank": "",
+                    "Industry / Model": "",
+                    "Why it fits (1–2 lines)": "",
+                    "Key match factors": [
+                        ""
+                    ],
+                    "Risk flags": "",
+                    "Score": ""
+                }
+            ]
+        },
+        "18) Low-Fit / Misfit": {
+            "Table": [
+                {
+                    "Category": "",
+                    "Why it’s a misfit (plain English)": "",
+                    "Example red flags to watch": ""
+                }
+            ],
+            "Notes": [
+                ""
+            ]
+        },
+        "20) Outreach Tracker (status log)": {
+            "Table": [
+                {
+                    "Month": "",
+                    "Industry": "",
+                    "Leads contacted": "",
+                    "Lead list size": "",
+                    "Responses": "",
+                    "Calls": "",
+                    "Write Ups": ""
+                }
+            ]
+        },
+        "21) Evolution Tracking (living section)": {
+            "Preference Changes (timestamped deltas)": [
+                {
+                "Date": "",
+                "Key Moment / Trigger": "",
+                "Trigger / evidence": "",
+                "Impact": ""
+                }
+            ],
+            "Learning & Growth Areas": [
+                {
+                "Date": "",
+                "New capability or mindset shift": "",
+                "Evidence": "",
+                "Support needed / next coaching step": ""
+                }
+            ],
+            "Success Patterns": [
+                {
+                "Date": "",
+                "Resonates": "",
+                "Repels": "",
+                "Implication for recommendations": ""
+                }
+            ]
+        },
+        "22) Psychology Signals Since Last Update": {
+            "Signals": [
+                {
+                "Signal": "",
+                "Evidence & date": "",
+                "Confidence": "",
+                "Coaching move": ""
+                }
+            ],
+            "Two-Line Rollup (auto/curated)": {
+                "Summary (3 bullets max)": [
+                ""
+                ],
+                "Action": {
+                    "Top 20 adjustment": "",
+                    "Sourcing focus next month": ""
+                }
+            }
+        }
+    }
+
+
+   
+  agent: json_assembler
+  context:
+    - reviewing_section_client_overview_and_status_task
+    - reviewing_section_search_parameters_task
+    - reviewing_section_financial_profile_task
+    - reviewing_section_business_characteristics_task
+    - reviewing_section_professional_background_task
+    - reviewing_section_development_areas_task
+    - reviewing_section_work_environment_fit_task
+    - reviewing_section_deal_experience_task
+    - reviewing_section_personal_and_family_context_task
+    - reviewing_section_interests_and_influences_task
+    - reviewing_section_psychology_and_coaching_insights_task
+    - reviewing_section_behavioral_snapshot_task
+    - reviewing_section_business_fit_evaluation_task
+    - reviewing_section_interaction_notes_and_red_flags_task
+    - reviewing_section_at_a_glance_task
+    - reviewing_section_client_stated_excitement_task
+    - reviewing_section_recommended_business_types_task
+    - reviewing_section_analyst_ai_fit_recommendations_task
+    - reviewing_section_low_fit_or_misfit_task
+    - reviewing_section_outreach_tracker_task
+    - reviewing_section_evolution_tracking_task
+    - reviewing_section_psychology_signals_since_last_update_task
+    

@@ -1,0 +1,23 @@
+[project]
+name = "internal_profile_update"
+version = "0.1.0"
+description = "internal_profile_update using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.130.0,<1.0.0"
+]
+
+[project.scripts]
+internal_profile_update = "internal_profile_update.main:run"
+run_crew = "internal_profile_update.main:run"
+train = "internal_profile_update.main:train"
+replay = "internal_profile_update.main:replay"
+test = "internal_profile_update.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
