@@ -1,0 +1,232 @@
+{
+  "21) Evolution Tracking (living section)": {
+    "Preference Changes (timestamped deltas)": [
+      {
+        "Date": "2025-09-17",
+        "Key Moment / Trigger": "Stronger stance against new-construction exposure",
+        "Trigger / evidence": "\"It is very risky to be exposed to new construction… I don't want to tie my personal guarantee to it\" (citing WSJ data on permits down in CA)",
+        "Impact": "De-prioritize new-construction contractors. Only engage if clear backlog, low concentration, and strong maintenance mix exist."
+      },
+      {
+        "Date": "2025-09-17",
+        "Key Moment / Trigger": "Geography guardrail clarified",
+        "Trigger / evidence": "\"Moving to California feels impractical… I will not be gone Monday through Friday\"",
+        "Impact": "Prioritize Greater Phoenix. Keep SoCal only for standout fits. Flag relocation logistics early."
+      },
+      {
+        "Date": "2025-09-22",
+        "Key Moment / Trigger": "No LOI without seller meeting",
+        "Trigger / evidence": "Broker asked for LOI before seller call; Pushkar refused",
+        "Impact": "Don't submit LOIs without seller conversation. Keep working capital \"normalized, set post-LOI.\""
+      },
+      {
+        "Date": "2025-10-01",
+        "Key Moment / Trigger": "Working capital intensity flagged as deal breaker",
+        "Trigger / evidence": "Heavy line-of-credit draws; said WC needs would \"trash\" his sleep",
+        "Impact": "Avoid businesses with large ongoing working capital needs. Require normalized NWC included in price."
+      },
+      {
+        "Date": "2025-10-08",
+        "Key Moment / Trigger": "Must protect against customer concentration",
+        "Trigger / evidence": "\"I don't want to be on the hook if one of these clients falls off\"",
+        "Impact": "Require performance-based seller notes tied to revenue or backlog when concentration exists."
+      },
+      {
+        "Date": "2025-11-04",
+        "Key Moment / Trigger": "Hard pass on algorithm-dependent revenue",
+        "Trigger / evidence": "Passed on car-titles e-commerce: \"at the mercy of Google... I don't want that anxiety\"",
+        "Impact": "De-prioritize SEO/PPC-dependent businesses. Favor recurring contracts."
+      },
+      {
+        "Date": "2025-11-11",
+        "Key Moment / Trigger": "Parallel LOIs acceptable until spend required",
+        "Trigger / evidence": "Asked about pursuing both ABA and AppClarity until term sheets",
+        "Impact": "Can hold two LOIs. Choose before paid diligence starts."
+      },
+      {
+        "Date": "2025-11-18",
+        "Key Moment / Trigger": "Escrow must count toward equity",
+        "Trigger / evidence": "Negotiated refundable escrow tied to APA; confirmed with lenders",
+        "Impact": "Only accept escrow with clear milestones that counts toward down payment."
+      },
+      {
+        "Date": "2025-12-02",
+        "Key Moment / Trigger": "Decision makers required on calls",
+        "Trigger / evidence": "\"No... Johnny needs to be on the call\"",
+        "Impact": "Expect actual sellers on weekly checkpoints, not just intermediaries."
+      },
+      {
+        "Date": "2026-01-06",
+        "Key Moment / Trigger": "Medicaid-heavy deals need policy protection",
+        "Trigger / evidence": "~96% Medicaid exposure; wants seller note forgiven if cuts hit",
+        "Impact": "Require large standby notes with policy-tied forgiveness or walk."
+      },
+      {
+        "Date": "2026-01-12",
+        "Key Moment / Trigger": "No early APAs or shortened diligence",
+        "Trigger / evidence": "Told broker \"standard process or walk\" when pushed for 25-day window",
+        "Impact": "Maintain normal sequence: diligence first, then buyer-drafted APA."
+      },
+      {
+        "Date": "2026-01-20",
+        "Key Moment / Trigger": "Owner-dependent MSP tolerance narrowed",
+        "Trigger / evidence": "Met seller who \"does three people's jobs\"; said \"is that the kind of life I want to sign up for? Not really\"; wants weekly seller calls and a plan to add support quickly",
+        "Impact": "For MSPs, require an early staffing plan funded by working capital/LOC (and possibly higher equity) to hire 1–2 near-shore support in year one and keep the seller on 2–3 years; avoid single-person support models without this plan."
+      }
+    ],
+    "Learning & Growth Areas": [
+      {
+        "Date": "2025-09-17",
+        "New capability or mindset shift": "Underwriting project businesses",
+        "Evidence": "Questioned cash vs accrual, margin normalization, backlog strength",
+        "Support needed / next coaching step": "Provide checklist for cash reconciliation and backlog verification"
+      },
+      {
+        "Date": "2025-09-22",
+        "New capability or mindset shift": "Financial model fluency",
+        "Evidence": "Asked Ryan to walk through 7(a) vs 504, seller notes, NWC placement",
+        "Support needed / next coaching step": "Practice with live deals; plan legal review for first serious LOI"
+      },
+      {
+        "Date": "2025-10-01",
+        "New capability or mindset shift": "Working capital normalization",
+        "Evidence": "Asked if buyers \"buy cash\"; agreed NWC set post-diligence",
+        "Support needed / next coaching step": "Share NWC checklist; request AR/AP aging early"
+      },
+      {
+        "Date": "2025-10-08",
+        "New capability or mindset shift": "SBA-compliant performance notes",
+        "Evidence": "Asked how to structure forgivable notes without earnouts",
+        "Support needed / next coaching step": "Provide plain-English examples tied to revenue or backlog"
+      },
+      {
+        "Date": "2025-10-22",
+        "New capability or mindset shift": "SDE normalization for staying partners",
+        "Evidence": "Adjusted SDE to include $200k for 10% partner staying long-term",
+        "Support needed / next coaching step": "Confirm SBA-compliant employment language"
+      },
+      {
+        "Date": "2025-11-18",
+        "New capability or mindset shift": "Escrow mechanics",
+        "Evidence": "Negotiated refundable escrow counting toward equity",
+        "Support needed / next coaching step": "Share sample clauses and lender confirmation examples"
+      },
+      {
+        "Date": "2025-12-02",
+        "New capability or mindset shift": "Parallel work management",
+        "Evidence": "Nidhi leads lender packages while he runs equity raise",
+        "Support needed / next coaching step": "Provide templates for business plan, SWOT, operator pitch"
+      },
+      {
+        "Date": "2025-12-12",
+        "New capability or mindset shift": "Post-close liquidity planning",
+        "Evidence": "Learned about term working capital and revolvers at close",
+        "Support needed / next coaching step": "Build cash-cushion plan with LOC examples"
+      },
+      {
+        "Date": "2026-01-06",
+        "New capability or mindset shift": "Medicaid policy analysis",
+        "Evidence": "Pulled 350-page court filing; requested fee schedules",
+        "Support needed / next coaching step": "Share Medicaid diligence checklist and re-trade templates"
+      },
+      {
+        "Date": "2026-01-12",
+        "New capability or mindset shift": "Holding process boundaries",
+        "Evidence": "Refused early APA; told broker \"standard process or walk\"",
+        "Support needed / next coaching step": "Provide scripts for pushing back on rushed timelines"
+      },
+      {
+        "Date": "2026-01-13",
+        "New capability or mindset shift": "AI-assisted early diligence in short windows",
+        "Evidence": "Planned to run a \"QoE-lite\" using LLMs to reconcile cash to books, flag issues, and set a working capital peg within the MSP's 25-day window before paying for QoE",
+        "Support needed / next coaching step": "Provide an AI diligence checklist, sample prompts, and 3–5 manual tie-outs to validate findings"
+      },
+      {
+        "Date": "2026-01-20",
+        "New capability or mindset shift": "Modeled higher equity and working capital to fund early hires and keep DSCR safe",
+        "Evidence": "Live screen-share modeling: tested 20% equity injection, added a working-capital tranche/LOC, and budgeted 1–2 near-shore support hires; also mapped light hosted PBX capex (Dallas/PA)",
+        "Support needed / next coaching step": "Draft a 12–18 month staffing plan (roles, timing, costs), include WC/LOC in sources and uses, and prep lender-friendly notes"
+      },
+      {
+        "Date": "2026-01-20",
+        "New capability or mindset shift": "Arizona licensing path clarified for trades",
+        "Evidence": "Learned his engineering degree counts toward two years of experience; needs about two years of qualifier coverage",
+        "Support needed / next coaching step": "Share qualifier agreement templates and a two-year compliance checklist"
+      }
+    ],
+    "Success Patterns": [
+      {
+        "Date": "2025-09-17",
+        "Resonates": "Recurring revenue, clear backlog, local Phoenix operations",
+        "Repels": "New-construction heavy, unclear financials, required relocation",
+        "Implication for recommendations": "Prioritize Phoenix service trades and healthcare with sticky demand"
+      },
+      {
+        "Date": "2025-09-22",
+        "Resonates": "Clean process (seller call before LOI, full P&L provided)",
+        "Repels": "Brokers gatekeeping information or pushing premature LOIs",
+        "Implication for recommendations": "Avoid brokers requiring LOI before seller meeting"
+      },
+      {
+        "Date": "2025-10-01",
+        "Resonates": "Normalized NWC included in price, clear AR/AP reports",
+        "Repels": "Heavy working capital needs, combined financials, buyer-funded NWC",
+        "Implication for recommendations": "Require detailed working capital reports early"
+      },
+      {
+        "Date": "2025-10-08",
+        "Resonates": "Performance-based protection for concentration risk",
+        "Repels": "Being liable if key customer or project falls through",
+        "Implication for recommendations": "Include forgivable seller notes tied to revenue/backlog"
+      },
+      {
+        "Date": "2025-11-04",
+        "Resonates": "Needs-based businesses not dependent on algorithms",
+        "Repels": "Google traffic or paid-ad dependent models",
+        "Implication for recommendations": "Favor local clinics and B2B services with contracts"
+      },
+      {
+        "Date": "2025-11-11",
+        "Resonates": "Running parallel deals until term sheets arrive",
+        "Repels": "Long limbo with no timelines",
+        "Implication for recommendations": "Get term sheets early; use takeaway closes for stalls"
+      },
+      {
+        "Date": "2025-11-18",
+        "Resonates": "Escrow tied to milestones and counting toward equity",
+        "Repels": "Open-ended escrow with unclear treatment",
+        "Implication for recommendations": "Make escrow refundable with written release terms"
+      },
+      {
+        "Date": "2025-12-02",
+        "Resonates": "Weekly checkpoints with actual decision makers",
+        "Repels": "Intermediary-only calls",
+        "Implication for recommendations": "Ensure sellers attend checkpoint calls directly"
+      },
+      {
+        "Date": "2026-01-06",
+        "Resonates": "Policy-tied seller notes for Medicaid risk",
+        "Repels": "Medicaid-heavy deals without protection",
+        "Implication for recommendations": "Require standby notes with forgiveness triggers"
+      },
+      {
+        "Date": "2026-01-12",
+        "Resonates": "Normal diligence sequence with 60-90 day windows",
+        "Repels": "Early APAs and arbitrary short timelines",
+        "Implication for recommendations": "Use firm scripts to maintain standard process"
+      },
+      {
+        "Date": "2026-01-13",
+        "Resonates": "Researching broker's listings and deal sizes to calibrate and push for a normal sequence",
+        "Repels": "Template APAs, talk of \"non-binding\" exclusivity and backup APAs during exclusivity, and gatekeeping seller contact",
+        "Implication for recommendations": "Arm him with simple scripts and keep seller involved directly; expect friction with small-deal brokers and plan weekly seller calls"
+      },
+      {
+        "Date": "2026-01-20",
+        "Resonates": "Using higher equity and a working-capital tranche/LOC to hire near-shore support early and protect DSCR; small capex tied to recurring hosted PBX growth",
+        "Repels": "Multi-year solo support slog and heavy key person risk",
+        "Implication for recommendations": "Only advance owner-dependent MSPs that can fund 1–2 early support hires and keep the seller for 2–3 years; filter out single-person support models without this path"
+      }
+    ]
+  }
+}

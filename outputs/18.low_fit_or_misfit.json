@@ -1,0 +1,249 @@
+{
+  "18) Low-Fit / Misfit (even if client says \"open\")": {
+    "Table": [
+      {
+        "Category": "Restaurants, cafes, bars, food trucks",
+        "Why it’s a misfit (plain English)": "Thin margins, high turnover labor, nights and weekends, hard to staff. Not aligned with family schedule.",
+        "Example red flags to watch": "Night and weekend revenue heavy, labor churn, food cost swings, need owner on site late."
+      },
+      {
+        "Category": "Retail stores and showrooms (apparel, jewelry, gifts, vape, convenience)",
+        "Why it’s a misfit (plain English)": "Foot-traffic and trend risk, inventory carrying cost, low repeat.",
+        "Example red flags to watch": "Big inventory on hand, high shrink, low subscription or membership revenue, mall or tourism dependent."
+      },
+      {
+        "Category": "Discretionary entertainment venues (arcades, escape rooms, go-karting, golf, theaters, nightclubs)",
+        "Why it’s a misfit (plain English)": "Want not need. Weekend and evening hours. Volatile demand.",
+        "Example red flags to watch": "Most sales Fri–Sun or evenings, party/event heavy, short leases in pricey retail centers."
+      },
+      {
+        "Category": "Traditional media outlets (newspapers, radio, TV)",
+        "Why it’s a misfit (plain English)": "Ad-driven revenue in long-term decline. Hard to fix.",
+        "Example red flags to watch": "Falling subscribers, falling ad CPMs, old equipment, negative trend lines."
+      },
+      {
+        "Category": "Crypto-related businesses",
+        "Why it’s a misfit (plain English)": "Volatile, platform risk, not a steady \"need.\"",
+        "Example red flags to watch": "Revenue tied to token prices, exchange risk, regulatory overhang."
+      },
+      {
+        "Category": "Online only ad/affiliate sites, dropshipping, Amazon FBA",
+        "Why it’s a misfit (plain English)": "Platform risk, paid-ads treadmill, weak moat, often high churn.",
+        "Example red flags to watch": ">60% traffic from paid ads, policy strikes, single marketplace dependency, low repeat orders."
+      },
+      {
+        "Category": "SaaS at unreasonable multiples or with high churn",
+        "Why it’s a misfit (plain English)": "He is open only if sticky and priced fairly. Overpaying kills DSCR.",
+        "Example red flags to watch": "8–12x ARR asks, churn >10% monthly, no clear ICP, paid-ads driven trials."
+      },
+      {
+        "Category": "Consumer vehicle rentals, taxis, ride services",
+        "Why it’s a misfit (plain English)": "Damage risk, tourism swings, high insurance, low pricing power.",
+        "Example red flags to watch": "Frequent vehicle damage claims, airport rule changes, city caps, ride-hail competition."
+      },
+      {
+        "Category": "RV, powersports, auto dealerships",
+        "Why it’s a misfit (plain English)": "Floorplan debt, inventory swings, sales force management, heavy marketing.",
+        "Example red flags to watch": "Floorplan exposure, large sales team churn, big ad spend, OEM pressure, low service mix."
+      },
+      {
+        "Category": "Gas stations and C-stores",
+        "Why it’s a misfit (plain English)": "Thin fuel margins, environmental liability, long hours.",
+        "Example red flags to watch": "Old tanks, no Phase I reports, fuel margin <10 cents, late-night staffing needs."
+      },
+      {
+        "Category": "Bail bonds, collection agencies, pawn, cash-for-gold",
+        "Why it’s a misfit (plain English)": "Reputational and lender risk, compliance headaches.",
+        "Example red flags to watch": "Banks unwilling, cash-heavy ops, complaints, lawsuits."
+      },
+      {
+        "Category": "Garden centers, nurseries, tree farms (AZ heat risk)",
+        "Why it’s a misfit (plain English)": "Climate stress in Phoenix. High loss risk on plants and trees.",
+        "Example red flags to watch": "Warranty-heavy, high replacement, water limits, summer kill rates."
+      },
+      {
+        "Category": "Beauty salons and basic spa-only concepts",
+        "Why it’s a misfit (plain English)": "Purely cosmetic spend, high churn, key stylist risk.",
+        "Example red flags to watch": "Walk-in heavy, no memberships, no injectables, no pre-paid packages, star-provider dependence."
+      },
+      {
+        "Category": "Event venues, party rentals, wedding venues",
+        "Why it’s a misfit (plain English)": "Weekend heavy, cyclical, hard seasonality.",
+        "Example red flags to watch": "Bookings clustered in peak months, low weekday revenue, high cancellation risk."
+      },
+      {
+        "Category": "Strict franchises that limit change",
+        "Why it’s a misfit (plain English)": "Pushkar wants operator freedom and bolt-ons.",
+        "Example red flags to watch": "Heavy rules, high royalties and ad fund, limited ability to improve pricing and ops."
+      },
+      {
+        "Category": "24/7 emergency service models with no rotation",
+        "Why it’s a misfit (plain English)": "On-call burns the owner and conflicts with family schedule.",
+        "Example red flags to watch": "\"Owner answers the phone at night,\" no tech rotation, weekend revenue is required."
+      },
+      {
+        "Category": "Heavy paid-ads treadmill businesses",
+        "Why it’s a misfit (plain English)": "CAC risk. He struggled with this before and does not want it.",
+        "Example red flags to watch": ">40% sales from Facebook/Google ads, poor LTV to CAC, no referral or renewal base."
+      },
+      {
+        "Category": "Owner-led outbound sales required from day one",
+        "Why it’s a misfit (plain English)": "He has not carried a quota. Needs an existing base or renewals.",
+        "Example red flags to watch": "80% of revenue from new cold outbound, no pipeline, no account management process."
+      },
+      {
+        "Category": "Single-person support or owner-does-it-all operations",
+        "Why it’s a misfit (plain English)": "If the seller does \"three people's jobs\" and there is no team or fast plan to hire, he would be stuck doing tickets, projects, and daily ops for years, which he does not want.",
+        "Example red flags to watch": "Seller handles most support, projects, and daily ops; buyer would be the only one for 12–24 months; high daily ticket volume (for example, 150/day); no SOPs or rotation; no working capital or plan to add near-shore/offshore help; seller unwilling to stay 2–3 years."
+      },
+      {
+        "Category": "High customer concentration",
+        "Why it’s a misfit (plain English)": "One or two accounts can sink the deal and DSCR.",
+        "Example red flags to watch": "Top customer >25–30% of revenue, weak contracts, short terms, no backups, future backlog or pipeline tied to one builder/GC."
+      },
+      {
+        "Category": "Forced real estate purchase at inflated price",
+        "Why it’s a misfit (plain English)": "CRE drag hurts DSCR and returns.",
+        "Example red flags to watch": "Seller insists on buying CRE above appraised value, short-term leases, poor cap rate (<6% with weak growth)."
+      },
+      {
+        "Category": "Big seasonality or tourism-driven revenue",
+        "Why it’s a misfit (plain English)": "Cash flow swings and staffing pain.",
+        "Example red flags to watch": ">40% of sales in 3 months, summer slump with no counter-season, tourist traffic dependent."
+      },
+      {
+        "Category": "Fragile import supply chains",
+        "Why it’s a misfit (plain English)": "Tariffs, shipping delays, FX risk, stockouts.",
+        "Example red flags to watch": ">70% COGS from single-country imports, long lead times, no alternates, tariff spikes baked in."
+      },
+      {
+        "Category": "Project-only construction trades with no service plans",
+        "Why it’s a misfit (plain English)": "One-and-done jobs. No recurring base to protect DSCR.",
+        "Example red flags to watch": "90%+ from new installs, builder-dependent, weak or unclear backlog, lumpy cash-basis results, no maintenance agreements, bid-only work, crew capacity constraints to deliver backlog, long gaps between big jobs with no payroll plan."
+      },
+      {
+        "Category": "Roofing that is only new build",
+        "Why it’s a misfit (plain English)": "Sales-heavy, cyclical, GC dependence, no recurring.",
+        "Example red flags to watch": "Homebuilder exposure, no inspections program, no drone surveys, no claims know-how."
+      },
+      {
+        "Category": "HVAC companies that are install-only",
+        "Why it’s a misfit (plain English)": "He wants contracts, not only replacements.",
+        "Example red flags to watch": "<10% revenue from maintenance, no PM agreements, summer-only spikes."
+      },
+      {
+        "Category": "Licensed trades with no qualifier plan",
+        "Why it’s a misfit (plain English)": "In Arizona, lack of license coverage can stall operations.",
+        "Example red flags to watch": "Seller is sole qualifier and wants out, no second license holder, no path to add qualifier."
+      },
+      {
+        "Category": "Healthcare clinics with provider dependency or weak MSO/DSO structure",
+        "Why it’s a misfit (plain English)": "Key clinician risk, compliance risk, or heavy Medicaid at-home concentration with no plan to shift mix.",
+        "Example red flags to watch": "One doctor equals 60% of volume, no stable associates, unclear MSO structure, 70%+ at-home Medicaid with no path to grow in-clinic, talk of reimbursement cuts without a hedge."
+      },
+      {
+        "Category": "Medicaid-heavy payer concentration without protection (ABA/HCBS hybrids)",
+        "Why it’s a misfit (plain English)": "Policy-driven rate cuts can erase margins and DSCR; no pricing power. Unless risk shifts to structure, this is not worth the personal guarantee.",
+        "Example red flags to watch": "~90%+ Medicaid exposure; fee schedules or reimbursement statements show cuts (for example, MercyCare 15%+ with more proposed); state budget gaps and negative outlook; no large standby/forgivable seller note tied to policy changes; no real cash cushion; seller cannot provide rate history."
+      },
+      {
+        "Category": "Daycare or preschool with unsafe ratios or weak compliance",
+        "Why it’s a misfit (plain English)": "Liability and reputation risk.",
+        "Example red flags to watch": "Staff ratios too thin, lapsed licenses, citation history, safety incidents, poor check-in controls."
+      },
+      {
+        "Category": "MSPs with low MRR and project-heavy revenue",
+        "Why it’s a misfit (plain English)": "He likes sticky contracts. Pure project shops are lumpy.",
+        "Example red flags to watch": "<40% revenue in MRR, short 30-day terms, no QBRs, high churn, no security stack."
+      },
+      {
+        "Category": "Digital agencies that live on one channel",
+        "Why it’s a misfit (plain English)": "Channel risk and churn with no sticky retainers.",
+        "Example red flags to watch": "Single-channel PPC shop, <50% on retainers, month-to-month terms, high client churn."
+      },
+      {
+        "Category": "Logistics with weak contracts and poor utilization",
+        "Why it’s a misfit (plain English)": "Asset heavy without locked revenue is risky.",
+        "Example red flags to watch": "No long-term contracts, low backhaul rates, idle assets, rising insurance and fuel with no surcharges."
+      },
+      {
+        "Category": "Laundromats or car washes with heavy capex and weak DSCR",
+        "Why it’s a misfit (plain English)": "Equipment debt can crush cash flow if revenue is flat.",
+        "Example red flags to watch": "Recent equipment loans, high rent plus note, low vend price, no membership or pickup routes."
+      },
+      {
+        "Category": "Auto repair with no process and all walk-in",
+        "Why it’s a misfit (plain English)": "Owner must sell jobs daily. Hard to scale.",
+        "Example red flags to watch": "No fleet accounts, no service writer, no retention program, 100% walk-in, Yelp review swings."
+      },
+      {
+        "Category": "Real estate dependent sites with a hostile landlord",
+        "Why it’s a misfit (plain English)": "Lease risk can kill stability and expansion.",
+        "Example red flags to watch": "Short lease remaining, big rent step-ups, no renewal rights, landlord wants to redevelop."
+      },
+      {
+        "Category": "All-cash seller demands and poor books",
+        "Why it’s a misfit (plain English)": "Not SBA-able and likely messy.",
+        "Example red flags to watch": "\"Cash only,\" no tax returns lined up with P&L, add-backs not supported, missing bank statements, weeks-long delay providing balance sheets, large unexplained withdrawals, big expense jumps with hand-wave answers."
+      },
+      {
+        "Category": "SBA-noncompliant deal terms (earnouts; mandated seller/partner employment > 12 months on paper)",
+        "Why it’s a misfit (plain English)": "Blocks SBA funding or adds risk. He prefers SBA-friendly structures and will avoid deals that require noncompliant terms.",
+        "Example red flags to watch": "Broker asks for an earnout or contingent payments labeled as such; LOI/PA states seller employment beyond 12 months; bank flags \"not allowed\" under SBA rules."
+      },
+      {
+        "Category": "Brokers/sellers who require an LOI before a seller call or basic financials",
+        "Why it’s a misfit (plain English)": "Poor process fit and low trust. Wastes time. Pushkar wants a seller call first and will not spray LOIs.",
+        "Example red flags to watch": "LOI demanded \"just to get a meeting,\" broker offers to draft your LOI, company name hidden after NDA, pressure to hard-set working capital pre-LOI, asks for a lender email \"approving\" LOI terms before seller signs, weeks to send balance sheets or payer fee schedules/reimbursement statements; claims LOI exclusivity is \"non-binding\"; talks about backup offers/APAs during exclusivity; requires long buyer profile and IOI with no asking price (Benchmark-style); gatekeeps direct seller contact."
+      },
+      {
+        "Category": "Early APA push or very short diligence windows (for example, template APA pre-diligence; 25–30 day DD)",
+        "Why it’s a misfit (plain English)": "Skips the normal sequence and adds legal risk. He will not sign an APA before diligence or accept an unreasonably short window.",
+        "Example red flags to watch": "Broker sends CABB or Transworld APA to sign before financials/QoE; insists buyer uses their template; demands 25–30 day diligence when LOI allows ~90 days."
+      },
+      {
+        "Category": "Out-of-market deals that require relocation without clear upside",
+        "Why it’s a misfit (plain English)": "He is local-first and prefers Phoenix.",
+        "Example red flags to watch": "Requires move far from Phoenix, weekday-away living needed, weak lender comfort, thin local ties, no path to management bench, unclear ability to get a mortgage right after closing."
+      },
+      {
+        "Category": "Businesses with heavy ongoing working capital needs (big AR/inventory swings, heavy line-of-credit use)",
+        "Why it’s a misfit (plain English)": "Ties up too much cash and adds risk. He will not fund large NWC at close.",
+        "Example red flags to watch": "Repeated large LOC draws to run the business, long AR aging, very high inventory balances, seller refuses to include normalized NWC in the price or set NWC post-diligence, unclear AR/AP/inventory detail."
+      },
+      {
+        "Category": "Combined or bundled entities with unclear breakout or carve-out",
+        "Why it’s a misfit (plain English)": "Hard to see true performance and what you are buying; risk of taking on weak parts.",
+        "Example red flags to watch": "One P&L for multiple entities (for example, union, non-union, an equipment lessor) under a parent, no separate reports, unclear what is for sale, refusal to provide breakouts or allow buying only the good entity, single state registration shared across service lines so they cannot easily be sold separately (may also rule out SBA)."
+      },
+      {
+        "Category": "Algorithm-dependent online businesses (SEO/PPC traffic reliance)",
+        "Why it’s a misfit (plain English)": "At the mercy of Google and paid platforms; traffic swings create stress and risk. He passed a deal for this reason.",
+        "Example red flags to watch": "Most leads or sales come from Google search or paid ads; big drops after algorithm changes; little referral or contract revenue."
+      },
+      {
+        "Category": "Escrow demands with no milestones or unclear lender treatment",
+        "Why it’s a misfit (plain English)": "Open-ended or non-refundable escrow before the APA adds risk and may not count toward equity.",
+        "Example red flags to watch": "Broker requires escrow early with no milestones, not payable at close, no written escrow agreement stating release terms, or lender won’t count it toward the down payment."
+      }
+    ],
+    "Notes": [
+      "Do not submit an LOI before a seller call. If a broker asks for it or offers to draft it, push back and ask for the seller meeting first. Keep working capital \"normalized, determined post-LOI.\"",
+      "If a deal touches a \"maybe\" area, apply the stickiness test. Show true repeat behavior, memberships, contracts, and churn. If it is not sticky, pass fast.",
+      "For licensed trades, confirm a compliant qualifier plan in writing before LOI. Seller stay-on, employee qualifier, or hire with guardrails.",
+      "For any CRE, run a lease vs buy quick check. Compare market rent to mortgage, cap rate, blended SBA terms, and DSCR impact.",
+      "For MSPs, target 60%+ revenue in MRR, 12–36 month terms, clear stack, and QBRs.",
+      "For healthcare, confirm MSO structure or compliant path, stable provider bench, payer mix, and no single clinician key risk.",
+      "Avoid models that push nights and weekends with no coverage plan. This will burn the owner and hit family time.",
+      "For project-based contractors, require clear backlog detail and cash vs accrual reconciliation. Avoid heavy new construction exposure unless backlog and terms clearly de-risk it.",
+      "Working capital: Purchase price must include a normalized NWC amount set post-diligence; pass if seller pushes buyer-funded NWC or if AR/AP/inventory detail is unclear and LOC use is heavy.",
+      "Combined entities: Require separate financials for each entity and a clear list of what is for sale; ask to carve out any underperforming parts.",
+      "Avoid earnout language in SBA deals. If downside protection is needed, use a performance-based, forgivable seller note tied pro rata to prior-year revenue or awarded backlog (SBA-compliant; not an earnout).",
+      "If escrow is required, push for a simple refundable escrow tied to the APA or payable at close, and confirm with the lender that it counts toward equity; require a short written escrow agreement that states release terms; avoid open-ended holds with no milestones.",
+      "In Medicaid/policy-sensitive deals, require payer fee schedules and reimbursement history early. If cuts are likely, treat as misfit unless the seller shifts risk with a large standby/forgivable note and there is a real cash cushion.",
+      "ABA lender reality: multiple lenders want about $750k of the seller note on full 10-year standby; Live Oak also wants two BCBAs on 5-year employment agreements (no PG or equity). Bring these terms into structure talks early.",
+      "Owner-does-it-all MSPs: treat as a misfit unless there is a fast, funded plan to hire near-shore/offshore support (1–2 hires in year one), a clear role handoff, and the seller stays on 2–3 years at fair market pay.",
+      "Benchmark-style gatekeeping: expect long buyer profiles, IOIs instead of LOIs, no asking price, and limited seller calls before IOI. Time-box effort and proceed only if quality and fit are high."
+    ]
+  }
+}

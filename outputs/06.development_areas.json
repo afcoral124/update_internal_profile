@@ -1,0 +1,192 @@
+{
+  "6) Development Areas": {
+    "Skills gaps needing support": [
+      {
+        "Skill gap": "Direct sales execution",
+        "Identified by": "self-identified",
+        "Description": "Has never carried a quota or done sales himself. Unsure if he would be good at owner-led selling. Needs help building a repeatable sales process if the business requires it."
+      },
+      {
+        "Skill gap": "Performance marketing and customer acquisition",
+        "Identified by": "self-identified",
+        "Description": "Children's book venture failed due to high customer acquisition costs. Needs guidance on evaluating marketing channels, setting CAC targets, and avoiding paid-media dependency. Passed on an e-commerce deal because of Google traffic anxiety."
+      },
+      {
+        "Skill gap": "Small business field team management",
+        "Identified by": "self-identified",
+        "Description": "Limited experience managing day-to-day field crews. Called it \"work\" to learn. Needs support with hiring, supervising hourly workers, and retention strategies."
+      },
+      {
+        "Skill gap": "Female-dominated clinical team leadership (ABA)",
+        "Identified by": "self-identified",
+        "Description": "Noted most ABA therapists are women who may have never worked for a male owner. Needs communication and trust-building strategies for successful transition."
+      },
+      {
+        "Skill gap": "Healthcare billing and payer mix analysis",
+        "Identified by": "self-identified",
+        "Description": "Called understanding insurance billing codes and Medicaid payments his \"biggest gap.\" Needs help evaluating reimbursement rates and diversifying payer concentration."
+      },
+      {
+        "Skill gap": "Licensed trades compliance (Arizona)",
+        "Identified by": "self-identified",
+        "Description": "Learned his engineering degree counts toward required experience, so he likely needs about two years of qualifier coverage. Still needs a clear plan for qualifier arrangements and state compliance steps during that period."
+      },
+      {
+        "Skill gap": "LOI structuring for SBA compliance",
+        "Identified by": "self-identified",
+        "Description": "Asks how much AcquiMatch helps with LOI terms. Wants guidance on seller notes, working capital, and protective contingencies that remain fundable."
+      },
+      {
+        "Skill gap": "Escrow mechanics and equity treatment",
+        "Identified by": "self-identified",
+        "Description": "Negotiated escrow arrangements but needed help ensuring they count toward equity injection. Requires guidance on milestone structures and lender requirements."
+      },
+      {
+        "Skill gap": "Healthcare legal risk management",
+        "Identified by": "self-identified",
+        "Description": "Healthcare attorney advised significant escrow for potential billing fraud in stock sales. Needs help balancing protection with fundability."
+      },
+      {
+        "Skill gap": "Offer pricing vs growth potential",
+        "Identified by": "self-identified",
+        "Description": "Asked whether to increase price based on his background fit. Needs framework for when to adjust offers without overpaying for future growth."
+      },
+      {
+        "Skill gap": "Due diligence sequencing",
+        "Identified by": "self-identified",
+        "Description": "Questions when to engage attorneys and QoE firms. Needs step-by-step plan with clear triggers to avoid unnecessary costs."
+      },
+      {
+        "Skill gap": "SBA fee inclusion mechanics",
+        "Identified by": "self-identified",
+        "Description": "Asked detailed questions about rolling advisory fees into project costs. Needs lender-acceptable documentation templates."
+      },
+      {
+        "Skill gap": "SBA lender package preparation",
+        "Identified by": "inferred by system",
+        "Description": "Lender requested business plan, SWOT analysis, and operator pitch. Needs templates to respond quickly without rework."
+      },
+      {
+        "Skill gap": "Financial model navigation",
+        "Identified by": "self-identified",
+        "Description": "Got confused about 7(a) vs 504 inputs, working capital placement, and seller note flows. Needs hands-on model guidance."
+      },
+      {
+        "Skill gap": "Pre-close HELOC planning",
+        "Identified by": "self-identified",
+        "Description": "Asked about opening HELOC before lender engagement and SBA lien interactions. Needs timing and strategy guidance."
+      },
+      {
+        "Skill gap": "QSBS eligibility and structure",
+        "Identified by": "self-identified",
+        "Description": "Requested training on QSBS benefits for SBA acquisitions and entity structure requirements."
+      },
+      {
+        "Skill gap": "Broker relationship management",
+        "Identified by": "inferred by system",
+        "Description": "Low NDA-to-CIM conversion rates, had to chase brokers, drove to sign NDA without receiving materials. Needs systematic follow-up process."
+      },
+      {
+        "Skill gap": "Deal momentum maintenance",
+        "Identified by": "self-identified",
+        "Description": "Called keeping momentum through ups and downs his \"biggest challenge.\" Needs weekly routines and accountability systems."
+      },
+      {
+        "Skill gap": "Work-life balance during search",
+        "Identified by": "self-identified",
+        "Description": "Tends to become \"all-consuming\" and drop health/family routines. Needs boundaries and time-blocking strategies."
+      },
+      {
+        "Skill gap": "Business valuation with real estate",
+        "Identified by": "inferred by system",
+        "Description": "Prefers leasing but now open to purchasing if priced fairly. Needs framework for comparing lease vs buy scenarios."
+      },
+      {
+        "Skill gap": "B2C service evaluation",
+        "Identified by": "inferred by system",
+        "Description": "Strong \"needs vs wants\" bias may cause him to overlook sticky B2C services. Needs criteria for assessing retention patterns."
+      },
+      {
+        "Skill gap": "Project business cash flow analysis",
+        "Identified by": "self-identified",
+        "Description": "Struggled with construction company's working capital needs and cash vs accrual accounting. Needs help understanding backlog quality and normalized margins."
+      },
+      {
+        "Skill gap": "Working capital normalization",
+        "Identified by": "self-identified",
+        "Description": "Modeled $0 working capital as placeholder, asked if buyers \"buy cash.\" Needs guidance on defining normalized NWC and LOI language."
+      },
+      {
+        "Skill gap": "Post-close liquidity planning",
+        "Identified by": "self-identified",
+        "Description": "Asked how to structure working capital facilities and revolvers at close. Needs plan for sizing cash cushion."
+      },
+      {
+        "Skill gap": "Multi-entity financial analysis",
+        "Identified by": "inferred by system",
+        "Description": "Found combined statements for three entities \"hard to decipher.\" Needs help separating performance and identifying what's for sale."
+      },
+      {
+        "Skill gap": "Deal prioritization",
+        "Identified by": "self-identified",
+        "Description": "Asked where to draw the line on effort investment. Needs framework for progression from broker call to LOI."
+      },
+      {
+        "Skill gap": "Post-acquisition relocation planning",
+        "Identified by": "self-identified",
+        "Description": "Asked about buying a house after buying a business. Needs guidance on timing and mortgage qualification."
+      },
+      {
+        "Skill gap": "SBA-compliant performance notes",
+        "Identified by": "self-identified",
+        "Description": "Asked how to structure forgivable seller notes tied to customer concentration without creating earnouts. Needs compliant wording and modeling approach."
+      },
+      {
+        "Skill gap": "Policy-based risk protection",
+        "Identified by": "self-identified",
+        "Description": "Wants to tie seller notes to Medicaid rate cuts. Needs SBA-compliant structure for policy-linked forgiveness."
+      },
+      {
+        "Skill gap": "Post-close employment arrangements",
+        "Identified by": "self-identified",
+        "Description": "Questions about SBA 12-month limit for seller employment when partner wants to stay long-term. Needs compliant agreement language."
+      },
+      {
+        "Skill gap": "Owner role presentation to lenders",
+        "Identified by": "inferred by system",
+        "Description": "Plans for spouse to operate full-time while he keeps W-2 initially. Needs framing for SBA underwriting."
+      },
+      {
+        "Skill gap": "Construction crew capacity planning",
+        "Identified by": "self-identified",
+        "Description": "Noted project gaps and asked how to keep crews productive between jobs. Needs staffing and scheduling strategies."
+      },
+      {
+        "Skill gap": "Early APA resistance",
+        "Identified by": "inferred by system",
+        "Description": "Broker pushed template APA before diligence. Needs scripts and sequencing guidance to maintain standard process."
+      },
+      {
+        "Skill gap": "Information management with brokers",
+        "Identified by": "inferred by system",
+        "Description": "Shared financials with seller's preferred lender early. Needs rules on what to disclose and when."
+      },
+      {
+        "Skill gap": "MSP owner-dependence transition planning",
+        "Identified by": "inferred by system",
+        "Description": "Seller does \"three people's jobs\" and handles most support, projects, and technical work. Needs a 12–18 month plan to reduce key person risk with near-shore/offshore hires, clear role sequencing, and commission-based sales support while maintaining DSCR."
+      }
+    ],
+    "Coaching/mentoring receptivity (what works best)": [
+      "Highly coachable with strong preference for structured guidance. Asks specific, practical questions about LOI terms, diligence timing, and lender requirements. Responds best to step-by-step frameworks with concrete examples - repeatedly requested checklists, templates, and written confirmations.",
+      "Values data-driven decisions. Wants to see models, lender emails, and policy documentation before moving forward. Shares these with spouse for review.",
+      "Learns through live deals. Willing to adjust approach based on real feedback. Runs \"practice reps\" on non-ideal deals to build skills.",
+      "Benefits from peer interaction and accountability. Weekly calls with searching friends help maintain momentum. Buyers Club attendance provides calibration.",
+      "Time-conscious learner. Mornings are most productive for working sessions. Prefers concise written follow-ups for evening review.",
+      "Acts quickly on specific guidance. Uploads models when asked, adjusts assumptions per feedback, meets homework deadlines.",
+      "Seeks pre-call preparation. Sends broker question lists via Slack for quick review before conversations.",
+      "Follows through on modeling exercises. Completed creative deal structure homework on schedule after receiving framework.",
+      "Implements changes in real time during live screen-share modeling. Adjusts equity injection, working capital, and staffing assumptions on the spot and uses scenarios to make decisions."
+    ]
+  }
+}

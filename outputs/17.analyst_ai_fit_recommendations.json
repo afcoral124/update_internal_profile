@@ -1,0 +1,269 @@
+{
+  "17) Analyst/AI Fit Recommendations — Ranked Top 20": {
+    "Table": [
+      {
+        "Rank": "1",
+        "Industry / Model": "IT Managed Service Providers and Cybersecurity",
+        "Why it fits (1–2 lines)": "LOI fully signed in early Jan 2026 on a healthcare IT installs + MSP. Strong skill match, sticky MRR; seller will stay 3–5 years and help in transition.",
+        "Key match factors": [
+          "Met seller; highly owner dependent today, but seller willing to stay 3–5 years",
+          "Hosted PBX recurring is about 25% of revenue (roughly $260k) near annual debt service",
+          "Plan to use working capital and possibly 20% equity injection to hire 1–3 near‑shore support in year 1",
+          "Broker is pushing a template APA; using 25 days to get full financials and weekly seller calls",
+          "Lenders: Jared at First Internet asked for a full file; Tom Lyons at Byline is interested and quoted Prime plus about 2%"
+        ],
+        "Risk flags": "-1 owner dependence, churn and pricing pressure; project and bid dependence on installs",
+        "Score": "Fit 5, Exc 4, Risk -1 => 3.6"
+      },
+      {
+        "Rank": "2",
+        "Industry / Model": "HVAC service and maintenance (commercial focus, Phoenix)",
+        "Why it fits (1–2 lines)": "If AC is down, nothing matters. Needs-based, service contracts, route density.",
+        "Key match factors": [
+          "Contracts and PM plans",
+          "License as moat with qualifier plan",
+          "Engineering degree counts toward 2 years of license experience; plan about 2 years of qualifier support",
+          "Commercial service over new build",
+          "High heat market"
+        ],
+        "Risk flags": "-1 licensing and seasonality",
+        "Score": "Fit 4, Exc 4, Risk -1 => 3.0"
+      },
+      {
+        "Rank": "3",
+        "Industry / Model": "Light manufacturing with mandated replacement cycles (for example, traffic signs, safety gear)",
+        "Why it fits (1–2 lines)": "Compliance-driven replacement creates recurring demand. Simple operations with B2B revenue.",
+        "Key match factors": [
+          "Predictable replacement cycles",
+          "Municipal and B2B buyers",
+          "Lower churn",
+          "Process-focused"
+        ],
+        "Risk flags": "-1 bid cycles, capex, and working capital swings",
+        "Score": "Fit 4, Exc 4, Risk -1 => 3.0"
+      },
+      {
+        "Rank": "4",
+        "Industry / Model": "Niche B2B SaaS (reasonable multiple, sticky workflow)",
+        "Why it fits (1–2 lines)": "Exact skill set fit. Strong if churn low and pricing sane. Avoids paid-ads treadmill.",
+        "Key match factors": [
+          "Product leadership strength",
+          "B2B stickiness and low churn",
+          "Reasonable multiple only",
+          "Remote ops OK"
+        ],
+        "Risk flags": "-1 tech churn and valuation risk",
+        "Score": "Fit 5, Exc 2, Risk -1 => 2.8"
+      },
+      {
+        "Rank": "5",
+        "Industry / Model": "ABA/HCBS (Phoenix; Medicaid-heavy hybrid under LOI)",
+        "Why it fits (1–2 lines)": "Under LOI but heavily Medicaid exposed; the state moved to dismiss the Centria v. MercyCare case. Mission fit is high, but policy risk must shift to the seller note or he will walk.",
+        "Key match factors": [
+          "About 75% HCBS and 25% ABA with roughly 96% Medicaid exposure; fee schedules and reimbursement history still pending",
+          "Pathward issued a term sheet; Live Oak sent a preliminary sheet; lenders want about $750k of seller note on full 10‑year standby",
+          "Plan to re‑trade terms with policy‑tied, forgivable note; end‑of‑January go/no‑go set",
+          "Seller slow on billing reports; will brief Live Oak and proceed only if structure protects DSCR"
+        ],
+        "Risk flags": "-2 regulatory and payer risk; AZ Medicaid rate cut pressure; staffing and BCBA retention",
+        "Score": "Fit 5, Exc 4, Risk -2 => 2.6"
+      },
+      {
+        "Rank": "6",
+        "Industry / Model": "Commercial landscaping maintenance",
+        "Why it fits (1–2 lines)": "Year-round Phoenix need. Contracted routes and crew ops suit process mindset.",
+        "Key match factors": [
+          "12-month demand in Phoenix",
+          "Multi-year contracts",
+          "Route density and upsells",
+          "Bolt-on friendly"
+        ],
+        "Risk flags": "-1 labor and customer churn",
+        "Score": "Fit 4, Exc 3, Risk -1 => 2.6"
+      },
+      {
+        "Rank": "7",
+        "Industry / Model": "Custom signs and banner printing (B2B)",
+        "Why it fits (1–2 lines)": "Repeat corporate orders and installs. Local moat and simple production.",
+        "Key match factors": [
+          "B2B repeaters and reorders",
+          "Local relationships matter",
+          "Install and service upsell",
+          "Modest capex"
+        ],
+        "Risk flags": "-1 project cyclicality, concentration, and working capital swings on AR and inventory",
+        "Score": "Fit 4, Exc 3, Risk -1 => 2.6"
+      },
+      {
+        "Rank": "8",
+        "Industry / Model": "Daycare and preschool centers",
+        "Why it fits (1–2 lines)": "He views this as a need and parents pay. Steady enrollment beats cycles.",
+        "Key match factors": [
+          "Established centers preferred",
+          "Safety and compliance focus",
+          "Multi-site growth runway",
+          "Good DSCR potential"
+        ],
+        "Risk flags": "-1 staffing and liability",
+        "Score": "Fit 3, Exc 4, Risk -1 => 2.4"
+      },
+      {
+        "Rank": "9",
+        "Industry / Model": "Med spa injectables and selected laser services",
+        "Why it fits (1–2 lines)": "Injectables are sticky. Scottsdale demand is strong; cash pay helps.",
+        "Key match factors": [
+          "High retention services",
+          "Trained providers in place",
+          "Cash pay mix",
+          "Scottsdale tailwind"
+        ],
+        "Risk flags": "-1 regulatory and key-provider risk",
+        "Score": "Fit 3, Exc 4, Risk -1 => 2.4"
+      },
+      {
+        "Rank": "10",
+        "Industry / Model": "Funeral home or mortuary transport",
+        "Why it fits (1–2 lines)": "Non-cyclical need with community moat. Predictable if well run.",
+        "Key match factors": [
+          "Essential service",
+          "Reputation and process driven",
+          "Stable cash flow",
+          "Local relationships"
+        ],
+        "Risk flags": "-1 licensing and sensitivity",
+        "Score": "Fit 3, Exc 4, Risk -1 => 2.4"
+      },
+      {
+        "Rank": "11",
+        "Industry / Model": "Optometry and optical or hearing aid clinics",
+        "Why it fits (1–2 lines)": "Recurring exams, device sales, and renewals. Sticky patient base.",
+        "Key match factors": [
+          "Recurring care cadence",
+          "Retail add-on without heavy inventory",
+          "Staffed clinics",
+          "Cash plus insurance"
+        ],
+        "Risk flags": "-1 payer mix and provider dependency",
+        "Score": "Fit 3, Exc 4, Risk -1 => 2.4"
+      },
+      {
+        "Rank": "12",
+        "Industry / Model": "Plumbing service with maintenance plans (commercial)",
+        "Why it fits (1–2 lines)": "Mission critical. Maintenance agreements and cross-sell suit plan.",
+        "Key match factors": [
+          "Contracts and PM plans",
+          "License as moat",
+          "Commercial focus",
+          "Avoid builder-heavy new-construction mix"
+        ],
+        "Risk flags": "-1 licensing and labor",
+        "Score": "Fit 3, Exc 3, Risk -1 => 2.0"
+      },
+      {
+        "Rank": "13",
+        "Industry / Model": "B2B logistics and moving or storage",
+        "Why it fits (1–2 lines)": "Accepts capex if contracts and utilization are strong. Route density matters.",
+        "Key match factors": [
+          "Contracted B2B accounts",
+          "Storage adds sticky revenue",
+          "Route and asset utilization",
+          "SBA-friendly structures"
+        ],
+        "Risk flags": "-1 capex, utilization, seasonality, and AR working capital float",
+        "Score": "Fit 3, Exc 3, Risk -1 => 2.0"
+      },
+      {
+        "Rank": "14",
+        "Industry / Model": "Pet services (grooming, daycare, boarding)",
+        "Why it fits (1–2 lines)": "Owners see this as essential. Easy to package into memberships.",
+        "Key match factors": [
+          "Memberships or packages",
+          "Frequent repeat visits",
+          "Cross-sell services",
+          "Strong local demand"
+        ],
+        "Risk flags": "-1 labor and seasonality",
+        "Score": "Fit 3, Exc 3, Risk -1 => 2.0"
+      },
+      {
+        "Rank": "15",
+        "Industry / Model": "Automotive needs-based services (tires, inspections, repair)",
+        "Why it fits (1–2 lines)": "Clear need vs want. Adds fleet B2B options and route density.",
+        "Key match factors": [
+          "Repeat maintenance demand",
+          "Fleet and B2B options",
+          "Route density",
+          "Simple KPIs"
+        ],
+        "Risk flags": "-1 labor and EV tech shifts",
+        "Score": "Fit 3, Exc 3, Risk -1 => 2.0"
+      },
+      {
+        "Rank": "16",
+        "Industry / Model": "Waste or junk removal and small roll-off",
+        "Why it fits (1–2 lines)": "Steady, simple operations. Can lock in B2B contracts and routes.",
+        "Key match factors": [
+          "Everyday demand",
+          "Route density",
+          "B2B contracts",
+          "Simple crews"
+        ],
+        "Risk flags": "-1 disposal fees and labor",
+        "Score": "Fit 3, Exc 3, Risk -1 => 2.0"
+      },
+      {
+        "Rank": "17",
+        "Industry / Model": "Pool service and repair (Phoenix)",
+        "Why it fits (1–2 lines)": "Year-round need in Phoenix. Contracted routes and repair upsell.",
+        "Key match factors": [
+          "Contracts and routes",
+          "Repair upsell margins",
+          "Route density",
+          "Local demand"
+        ],
+        "Risk flags": "-1 churn and labor quality",
+        "Score": "Fit 3, Exc 3, Risk -1 => 2.0"
+      },
+      {
+        "Rank": "18",
+        "Industry / Model": "Elevator service and maintenance",
+        "Why it fits (1–2 lines)": "Code-driven recurring service and strong moat. High margin if staffed.",
+        "Key match factors": [
+          "Required maintenance cadence",
+          "High barriers to entry",
+          "Contract base",
+          "Process focus"
+        ],
+        "Risk flags": "-1 licensing and talent scarcity",
+        "Score": "Fit 3, Exc 3, Risk -1 => 2.0"
+      },
+      {
+        "Rank": "19",
+        "Industry / Model": "Roofing with inspections and maintenance subscriptions",
+        "Why it fits (1–2 lines)": "Recurring inspections and repairs with some project work. Drone inspections and claims know-how help.",
+        "Key match factors": [
+          "Maintenance plan add-ons",
+          "Drone inspections",
+          "Insurance claims process",
+          "Cross-sell gutters",
+          "Limit new-construction exposure"
+        ],
+        "Risk flags": "-1 weather cycles, labor, sales heavy; avoid new-build exposure",
+        "Score": "Fit 3, Exc 3, Risk -1 => 2.0"
+      },
+      {
+        "Rank": "20",
+        "Industry / Model": "Home health and personal care (MSO friendly)",
+        "Why it fits (1–2 lines)": "Healthcare mission plus aging market in Phoenix, but current AZ funding pressure and federal match changes raise risk.",
+        "Key match factors": [
+          "Non-clinical operations model",
+          "Recurring shifts and hours",
+          "Large local demand tailwind",
+          "Prefer diversified payers and clear DSCR"
+        ],
+        "Risk flags": "-2 labor intensity and compliance; Medicaid reimbursement headwinds and budget pressure",
+        "Score": "Fit 4, Exc 5, Risk -2 => 2.4"
+      }
+    ]
+  }
+}

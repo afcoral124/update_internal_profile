@@ -1,0 +1,47 @@
+{
+  "22) Psychology Signals Since Last Update": {
+    "Signals": [
+      {
+        "Signal": "Lower tolerance for heavy owner-dependence; needs a funded 90-day hiring plan or will pass",
+        "Evidence & date": "2026-01-20 — On MSP: \"He does three people's jobs... is that the kind of life I want to sign up for? Not really.\" Modeled hiring 1–2 near-shore roles and using working capital/LOC or higher equity to make it viable; wants a fast go/no-go.",
+        "Confidence": "Medium-High",
+        "Coaching move": "Show a simple, funded hiring plan (1–2 near-shore/offshore roles) with WC/LOC outlined and a 12–18 month path out of the weeds. Bring pre-vetted candidates and a weekly seller handoff plan."
+      },
+      {
+        "Signal": "Executes fast once terms feel right; sets cadence immediately",
+        "Evidence & date": "2026-01-06 — LOI fully signed on the healthcare IT + MSP \"last Friday,\" sent the initial doc list the same day, and began setting recurring seller calls.",
+        "Confidence": "High",
+        "Coaching move": "When green-lit, send a one-page redline summary and a ready-to-send doc request list; put recurring seller and lender calls on the calendar before ending the call."
+      },
+      {
+        "Signal": "Parallel-path pragmatist; keeps a real fallback before exiting a deal",
+        "Evidence & date": "2026-01-06 — Will confirm MSP lendability with 2–3 lenders before stepping away from the ABA deal (\"have a rock before we jump\"); Pathward is still interested on ABA; Live Oak asked for rate trends; Bruce is waiting on balance sheets.",
+        "Confidence": "High",
+        "Coaching move": "Line up 2–3 lender intros per path; track term sheets side by side; avoid exclusivity with vendors until a strong term sheet lands."
+      },
+      {
+        "Signal": "Policy-risk red line on Medicaid-heavy deals; will only proceed if policy risk shifts to the seller note",
+        "Evidence & date": "2025-12-12 — Planned to split a $1.5M seller note: half on full 10-year standby and half performance-based to cushion DSCR. 2026-01-13 — Set end-of-January go/no-go and prepared to re-trade after rate docs. 2026-01-20 — State moved to dismiss Centria v. MercyCare; he will push a re-trade next week and brief Wendy; said he is \"mentally checked out\" unless terms shift risk.",
+        "Confidence": "High",
+        "Coaching move": "Provide plain-English, SBA-compliant language for policy-linked, pro-rata forgiveness; bundle the re-trade after lender term sheets and after fee-schedule proof arrives."
+      },
+      {
+        "Signal": "Higher privacy guardrails at his W-2; needs low-profile scheduling",
+        "Evidence & date": "2026-01-06 — Employer forced open calendar visibility; he blocked a \"lunch\" hold so meeting details stay private; wants to exit but will not rush into a bad deal.",
+        "Confidence": "Medium-High",
+        "Coaching move": "Use generic calendar titles (for example, \"Project review\"), morning or lunch slots, and concise Slack/DM updates; keep attachments and file names neutral."
+      }
+    ],
+    "Two-Line Rollup (auto/curated)": {
+      "Summary (3 bullets max)": [
+        "Preference change: Lower appetite for owner-dependent MSPs unless we can fund 1–2 hires fast (WC/LOC or more equity) with a 90-day handoff plan.",
+        "Success pattern: Live-modeling structure and early hires improved comfort; will use lender working capital/LOC to staff quickly.",
+        "Psych/coaching note: ABA is time-boxed; pushing a re-trade next week after state’s dismissal motion and rate docs; ready to walk if risk is not shifted."
+      ],
+      "Action": {
+        "Top 20 adjustment": "Raise MSPs with an existing bench or clear 90-day handoff and a seller who will stay; lower tiny owner-only MSPs; lower AZ Medicaid-heavy ABA/HCBS; keep pure-play ABA with healthier payer mix on the radar.",
+        "Sourcing focus next month": "MSP/healthcare IT with a basic team and clear handoff; clinic-based ABA with balanced payer mix"
+      }
+    }
+  }
+}

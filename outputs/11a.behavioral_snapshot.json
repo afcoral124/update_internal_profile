@@ -1,0 +1,302 @@
+{
+  "11A) Behavioral Snapshot": [
+    {
+      "Signal": "Asks for proof and specifics before deciding; prefers written confirmation and simple models",
+      "Confidence level": "High",
+      "Coaching moves that work": [
+        "Share lender emails, SOP cites, and screenshots when rules matter",
+        "Provide one-page models showing DSCR, working capital, and fee treatment",
+        "End calls with written recap and next steps he can share with Nidhi"
+      ],
+      "Watch-outs": [
+        "Vague assurances or verbal-only answers stall him",
+        "Too many documents without a summary slows him down"
+      ],
+      "Recent examples": [
+        "2025-06-17: Asked for screenshot of sources-and-uses slide to review later",
+        "2025-06-25: Asked for lender proof that fees can be included in project costs; said \"That actually makes me way more comfortable... I'm set\" after seeing email",
+        "2025-11-25: \"Please send over to Bruce... once he gives an email saying they're good to lend based on the terms, I will send to Johnny to review and sign\"",
+        "2026-01-13: Followed up for billing reports and fee schedules on ABA; said he would brief Wendy (Live Oak) with facts and either restructure or walk"
+      ]
+    },
+    {
+      "Signal": "Applies \"needs vs wants\" filter and passes quickly on misfit or shrinking markets",
+      "Confidence level": "High",
+      "Coaching moves that work": [
+        "Lead with why the business is a \"need\" with recurring or mandated replacement cycles",
+        "Call out market trends, DSCR, concentration, and CRE impact upfront",
+        "Offer clear \"why pursue\" and \"why pass\" in two to three lines"
+      ],
+      "Watch-outs": [
+        "May skip sticky B2C that behaves like a need; show churn and repeat data to keep it in play"
+      ],
+      "Recent examples": [
+        "2025-06-09: Passed on evaporative cooling parts - \"It's a shrinking market... outdated product\"",
+        "2025-09-17: On framing/carpentry deal - \"It is very risky to be exposed to new construction... I don't want to tie my personal guarantee to it\"",
+        "2025-11-04: Passed on car-titles e-commerce - \"at the mercy of the Google search algorithm... I don't want to get into that anxiety\""
+      ]
+    },
+    {
+      "Signal": "Sets firm time boundaries; mornings are flexible, evenings are family time",
+      "Confidence level": "High",
+      "Coaching moves that work": [
+        "Book working sessions in morning AZ time",
+        "Use Slack or email for concise follow-ups; avoid evening asks",
+        "Batch decisions into early blocks when he has focus"
+      ],
+      "Watch-outs": [
+        "Late-night or vague \"urgent\" requests cause friction and slow response"
+      ],
+      "Recent examples": [
+        "2025-06-25: \"I can do as early as 5 a.m... evenings are my family time... I've been called at 10:30 p.m... I won't\"",
+        "2025-08-05: Described routine of dinner at 6 pm and early bedtime",
+        "2026-01-06: Employer forced open calendar visibility; blocked \"lunch\" window to keep meeting details private"
+      ]
+    },
+    {
+      "Signal": "Coachable and open to structured guidance; asks for step-by-step help",
+      "Confidence level": "High",
+      "Coaching moves that work": [
+        "Give checklists, timelines, and simple playbook for LOIs and diligence gates",
+        "Calibrate with live deals; let him test and refine in real time",
+        "If conversation drifts, ask to reset and confirm agenda"
+      ],
+      "Watch-outs": [
+        "Too many options at once dilutes focus; present 2-3 choices with a recommendation"
+      ],
+      "Recent examples": [
+        "2025-08-05: \"Please do\" when asked if okay to cut off tangents to stay on track",
+        "2025-09-22: Asked Ryan to walk through financial model and LOI template",
+        "2025-10-01: Agreed to upload model to shared folder, lower growth to 2-5%, complete creative deal structure homework by end of week",
+        "2026-01-20: Live screen-share modeling on MSP: bumped equity injection, added working capital and near-shore hires in the model to see DSCR and cash flow"
+      ]
+    },
+    {
+      "Signal": "Momentum dips after setbacks; peers and clear weekly targets help him keep going",
+      "Confidence level": "Medium-High",
+      "Coaching moves that work": [
+        "Set weekly pipeline rhythm: NDAs, CIMs, broker calls, and next steps",
+        "Celebrate small wins and keep top-of-funnel full while deep-diving",
+        "Encourage use of Buyers Club and peer touchpoints"
+      ],
+      "Watch-outs": [
+        "Long gaps without visible progress lead to energy drops and slower outreach"
+      ],
+      "Recent examples": [
+        "2025-06-09: \"Keeping the momentum up has been a challenge... some weeks I feel low on energy\""
+      ]
+    },
+    {
+      "Signal": "Decides and moves fast once comfortable; locks in payments and next steps on the call",
+      "Confidence level": "High",
+      "Coaching moves that work": [
+        "When ready, confirm dates, dollar amounts, and owners",
+        "Send agreement and invoice immediately; set calendar holds before ending call"
+      ],
+      "Watch-outs": [
+        "Only push to commit after he has the proof and model he asked for"
+      ],
+      "Recent examples": [
+        "2025-06-25: \"We've moved money over... we're fully in it... let's do this\" - agreed to $35k plan and end-of-week signing",
+        "2025-11-25: Used document compare to verify LOI redlines, then signed during call",
+        "2026-01-06: LOI fully signed on healthcare IT + MSP \"last Friday,\" sent initial doc list same day"
+      ]
+    },
+    {
+      "Signal": "Accepts realistic timelines and wants focus defined early",
+      "Confidence level": "Medium",
+      "Coaching moves that work": [
+        "Set expectations on 12-month search; show early milestones",
+        "In first 90 days, co-define \"what we are and are not going after\""
+      ],
+      "Watch-outs": [
+        "Vague or shifting criteria frustrates him; lock the box and iterate with live deals"
+      ],
+      "Recent examples": [
+        "2025-06-09: When told \"12 months,\" he said \"Then that's what it is\"",
+        "2025-06-17: \"In 90 days... have a very clear idea of what we are going after\""
+      ]
+    },
+    {
+      "Signal": "Local-first and practical about lender fit",
+      "Confidence level": "Medium",
+      "Coaching moves that work": [
+        "Prioritize Greater Phoenix; only show SoCal for true standout",
+        "Use lenders who accept fee inclusion with clear DSCR; share written guidance",
+        "Flag relocation and housing logistics early if out-of-state deal appears"
+      ],
+      "Watch-outs": [
+        "Out-of-market deals with weak lender comfort waste time"
+      ],
+      "Recent examples": [
+        "2025-09-17: Moving to California feels impractical; won't do weekday-away living",
+        "2025-11-18: Excluded real estate from ABA LOI and plans to use SBA 504 when CRE included"
+      ]
+    },
+    {
+      "Signal": "Runs playbook for learning, even when deal isn't ideal",
+      "Confidence level": "Medium",
+      "Coaching moves that work": [
+        "Encourage reps: broker call to owner call with short pre-call checklist",
+        "Time-box effort and set clear go/no-go gates to avoid over-investing",
+        "Offer quick Slack feedback on his question list before calls"
+      ],
+      "Watch-outs": [
+        "Spending too much time on off-fit deals; confirm \"why pursue\" vs \"why pass\" early"
+      ],
+      "Recent examples": [
+        "2025-09-17: Despite concerns about new construction and relocating, said he would \"run with this\" to learn",
+        "2025-10-01: \"Regardless of the outcome, this is still good practice\""
+      ]
+    },
+    {
+      "Signal": "Wants seller call before any LOI; rejects \"spray and pray\" LOIs",
+      "Confidence level": "Medium-High",
+      "Coaching moves that work": [
+        "Secure seller intro before discussing LOI terms",
+        "Keep him LOI-ready with template and plan for quick legal review",
+        "Use pre-qual letter to handle broker \"can you fund it?\" questions"
+      ],
+      "Watch-outs": [
+        "Brokers who gatekeep company name or push for LOI first",
+        "Pressure to set working capital number early"
+      ],
+      "Recent examples": [
+        "2025-09-22: Broker asked for LOI before seller call; Pushkar refused and asked for seller meeting first",
+        "2025-10-01: After strong seller call, told broker he'd revert by end of week after running numbers"
+      ]
+    },
+    {
+      "Signal": "Leads with downside protection; wants performance-protected, SBA-compliant structures",
+      "Confidence level": "Medium-High",
+      "Coaching moves that work": [
+        "Show simple example of forgivable seller note tied to revenue or backlog",
+        "Tie offers to last year's revenue or awarded projects",
+        "Model worst/no-change/best cases and remove balloons that hurt DSCR"
+      ],
+      "Watch-outs": [
+        "Brokers pushing high cash at close or earnout language",
+        "Complex terms without plain-English summary can confuse seller"
+      ],
+      "Recent examples": [
+        "2025-10-08: \"It's my personal guarantee on the line... if that goes sideways... that is disastrous\"",
+        "2025-12-12: Planned to split $1.5M seller note: half on 10-year standby, half performance-based",
+        "2026-01-06: Considering seller note forgiven if Medicaid cuts hit in 3-5 years"
+      ]
+    },
+    {
+      "Signal": "Time-boxes indecision; pushes for deadlines and uses takeaway closes",
+      "Confidence level": "Medium",
+      "Coaching moves that work": [
+        "Propose clear decision dates and next steps",
+        "If delays persist, use polite \"we need to withdraw by X date\" note",
+        "Offer fast paths (meet in person, lender call) to unblock decisions"
+      ],
+      "Watch-outs": [
+        "Pushing too early can backfire; confirm real leverage first"
+      ],
+      "Recent examples": [
+        "2025-11-11: Asked if sensible to tell broker \"give me a definitive answer or I'm out\"",
+        "2025-11-18: \"Let's not let him keep kicking the can... we can't sit around and wait\"",
+        "2026-01-13: Set end-of-January go/no-go on ABA; will push a re-trade the following week based on rate cuts and lender terms"
+      ]
+    },
+    {
+      "Signal": "Keeps two deals moving in parallel until cash outlays required",
+      "Confidence level": "Medium",
+      "Coaching moves that work": [
+        "Get term sheets on strongest options before spending on QoE",
+        "Sequence lender intros first, then decide where to pay for diligence",
+        "Keep simple tracker so parallel work doesn't overwhelm"
+      ],
+      "Watch-outs": [
+        "Risk of overcommitment without clear stop points"
+      ],
+      "Recent examples": [
+        "2025-11-11: Asked if \"crazy\" to be under offer on both ABA clinic and AppClarity",
+        "2026-01-06: Signed MSP LOI while under ABA LOI; wants to confirm MSP lendability before stepping away from ABA"
+      ]
+    },
+    {
+      "Signal": "Expects actual decision maker on weekly checkpoint calls",
+      "Confidence level": "Medium",
+      "Coaching moves that work": [
+        "Ensure seller attends checkpoint calls; send short agenda with decisions needed",
+        "Keep brokers invited but optional"
+      ],
+      "Watch-outs": [
+        "Intermediary-only updates slow decisions and create rework"
+      ],
+      "Recent examples": [
+        "2025-12-02: \"[Broker] said it'll just be me on the calls. I said, no... starting next week, she'll be on\"",
+        "2026-01-13: Asked for weekly seller calls on MSP; broker gatekept and seller joined late only after he pushed"
+      ]
+    },
+    {
+      "Signal": "Stages re-trades at clear gates and bundles asks; avoids early spend",
+      "Confidence level": "Medium",
+      "Coaching moves that work": [
+        "Push for term sheets first, then present structure changes together",
+        "Hold QoE and legal spend until lender interest and key documents arrive",
+        "Summarize re-trade in plain English with facts that drive it"
+      ],
+      "Watch-outs": [
+        "Don't fire off piecemeal re-trades too early"
+      ],
+      "Recent examples": [
+        "2025-12-12: Will negotiate first after term sheets, then again post-QoE",
+        "2026-01-06: Chased fee schedules and held back on QoE/legal until rate data arrives",
+        "2026-01-13: Will use the MSP's 25-day window to get full docs and weekly seller calls, then shift back to a normal sequence with a buyer-drafted APA"
+      ]
+    },
+    {
+      "Signal": "Refuses premature legal documents; insists on normal sequence",
+      "Confidence level": "Medium-High",
+      "Coaching moves that work": [
+        "Provide simple script: \"We'll draft custom APA during diligence\"",
+        "Back him with legal counsel notes on why templates are risky",
+        "Reaffirm standard order: diligence first, APA later with buyer's counsel"
+      ],
+      "Watch-outs": [
+        "Brokers pushing template APA early or trying to cut diligence to 25 days"
+      ],
+      "Recent examples": [
+        "2026-01-09: MSP broker sent template APA; Pushkar replied \"zero chance\"",
+        "2026-01-12: Told broker \"standard process or walk\" when pushed for early APA",
+        "2026-01-13: Broker claimed LOI exclusivity is non-binding and talked about backup APAs; Pushkar refused the template and kept to a normal sequence plan"
+      ]
+    },
+    {
+      "Signal": "Uses AI to speed early diligence and reduce cost in short windows",
+      "Confidence level": "Medium",
+      "Coaching moves that work": [
+        "Send CSV exports of bank statements, GL detail, AR/AP aging, and billing reports",
+        "Give a clear question list (cash-to-books checks, working capital peg, addback flags)",
+        "Sanity-check AI findings with a few manual tie-outs and plan QoE after lender interest"
+      ],
+      "Watch-outs": [
+        "Do not over-rely on AI outputs without sampling source docs",
+        "Keep summaries simple for sellers and lenders; avoid technical jargon"
+      ],
+      "Recent examples": [
+        "2026-01-13: Said he will run a \"QoE-lite\" using LLMs to reconcile cash to books and set a working capital peg within the MSP's 25-day window before paying for QoE"
+      ]
+    },
+    {
+      "Signal": "Researches broker background and uses it to steer process",
+      "Confidence level": "Medium",
+      "Coaching moves that work": [
+        "Quietly check broker's other listings and deal sizes to calibrate expectations",
+        "Arm him with scripts to explain why larger deals need a normal sequence",
+        "Keep tone calm and facts-based to avoid escalation"
+      ],
+      "Watch-outs": [
+        "Do not confront the broker in a way that risks access to the seller",
+        "Share findings with the seller only when needed and tactfully"
+      ],
+      "Recent examples": [
+        "2026-01-13: Looked up Mo's other listings (Subway at $149k, dry cleaner $625k, flower shop $149k) and concluded this MSP is above his usual size; used that insight to push for a standard process with weekly seller calls and a buyer-drafted APA"
+      ]
+    }
+  ]
+}

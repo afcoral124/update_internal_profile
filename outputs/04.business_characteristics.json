@@ -1,0 +1,74 @@
+{
+  "4) Business Characteristics (internal-only detail)": {
+    "Preferred employee count / team structure": [
+      "Prefers 10+ employees so the owner is not doing all the work.",
+      "Comfortable leading cross-functional teams with clear roles.",
+      "Best fit is a crew-based service business with working supervisors or a dispatcher already in place.",
+      "Will add or retain a licensed qualifier or senior manager where required.",
+      "Will model fair market pay for key leaders into SDE and budget accordingly (open to keeping a former owner/partner on payroll if it adds stability).",
+      "Open to a smaller team on a strong MSP if the seller stays 2–3 years and there is a clear growth path.",
+      "Will stand up near-shore or offshore support hires early to handle tickets and free up owner time (one to two people in year one if cash flow allows)."
+    ],
+    "Customer base preferences": [
+      "Open to B2B or B2C, with a strong preference for recurring contracts and high retention.",
+      "Likes local, geographically protected customer bases that favor incumbents.",
+      "Wants a diverse book of customers and will avoid heavy customer concentration; in construction, knows some concentration is typical and will seek protections if a few customers dominate. Would favor ultra‑high‑end residential clients over developer‑heavy multifamily exposure.",
+      "In healthcare, wants a balanced payer mix; will avoid very high Medicaid concentration (for example, 80–90%+) unless there is a clear plan or protective terms."
+    ],
+    "Growth profile": [
+      "Prefers steady, recession-resistant businesses with a long track record.",
+      "Comfortable with light operational improvements and bolt-on acquisitions.",
+      "Not looking for distressed turnarounds or high-burn, hypergrowth plays.",
+      "Wants limited exposure to new construction cycles; prefers maintenance/repair or replacement demand with clear backlog.",
+      "Wants the first 12–24 months de‑risked with real backlog or contracts; backlog helps but does not replace macro/cycle risks.",
+      "Will pass on deals where policy-driven reimbursement cuts could wipe out DSCR unless terms shift risk (for example, large standby or forgivable seller note).",
+      "Open to “buying a job” for 12–24 months in a smaller MSP if growth levers are real and the seller supports the transition.",
+      "Prefers a recurring base that can cover most or all debt service so growth can be funded from cash flow."
+    ],
+    "Sales/marketing intensity tolerance": [
+      "Does not want a business that relies on heavy outbound sales or constant paid ads to survive.",
+      "Prefers inbound demand, referrals, contract renewals, and relationship-driven sales.",
+      "Will invest in improving sales process and account management, but wants an existing base to start from.",
+      "Avoids models that depend on Google search traffic or algorithm changes for lead flow (passed on an e‑commerce deal for this reason)."
+    ],
+    "Operational complexity": [
+      "Comfortable with single-site or multi-crew dispatch models if routes and schedules are predictable.",
+      "Field operations are fine if SOPs, basic systems, and safety practices exist.",
+      "Open to licensed trades if there is a clear plan for licensing coverage during the transition.",
+      "Comfortable with regulated healthcare clinic operations and payer-driven models (for example, Medicaid), and understands registration/transfer can take about 5–6 months; will plan for heavier diligence.",
+      "In healthcare deals, wants a mixed payer base and prefers to grow higher‑margin, in‑clinic services so the business is not too dependent on Medicaid at‑home revenue.",
+      "Understands Medicaid reimbursement is state-specific; will ask for rate history and outlook and slow down or walk away if near‑term cuts are likely.",
+      "In Arizona licensed trades, his engineering degree counts toward experience; needs about two years of qualifier/license coverage during transition and views this as manageable."
+    ],
+    "Asset-heavy vs. service-based": [
+      "Strong preference for service-based, low CapEx models.",
+      "Comfortable with trucks, tools, and light equipment tied to recurring maintenance.",
+      "Avoids heavy fleet, large inventory, or real-estate-heavy models that drag returns.",
+      "Okay with light IT capex like servers and colocation racks tied to recurring hosted services (for example, hosted PBX)."
+    ],
+    "Cultural fit": [
+      "Values stable, family-owned companies where the seller cares about legacy and staff.",
+      "Plans to keep and grow the team; open to a former owner or minority partner staying employed long term at fair pay if it adds stability; otherwise prefers the seller in a short consultative role.",
+      "Sees regulatory and licensing discipline as a moat, not a burden.",
+      "Operates with a stakeholder mindset: treat customers and employees well, improve systems, grow steadily.",
+      "For female‑dominated clinical teams, plans for Nidhi to front‑face day to day during transition to lower risk; he will co‑lead."
+    ],
+    "Hidden NOs / soft preferences": [
+      "Needs-over-wants bias: will avoid luxury or discretionary consumer categories unless there is a sticky, clinical element.",
+      "Real estate: prefers to lease; will buy if priced fairly and required. When leasing, prefers a right of first refusal to buy later; will also exclude CRE from a deal if it complicates closing or drags returns.",
+      "Sales engine: avoids businesses that require building a heavy outbound or paid-ads engine from scratch.",
+      "Concentration: wants low concentration; will pass on companies where one or two customers dominate, especially when future backlog is tied to one builder. If unavoidable, he wants deal terms that protect against losing a big customer.",
+      "Online-only risk: not interested in ad/affiliate content sites, dropshipping, or FBA; SaaS only if niche, sticky, and reasonably priced.",
+      "Search-traffic dependence: will avoid businesses reliant on Google SEO/algorithm-driven traffic for leads or sales.",
+      "Transportation rentals: not interested in car rentals, taxis, or RV dealerships.",
+      "Project-only trades: prefers service trades with maintenance contracts; pure one-off project revenue is less attractive unless paired with recurring service plans.",
+      "New construction heavy revenue: will avoid businesses mainly tied to new builds; lumpy, bid-only work without backlog is a poor fit.",
+      "Seasonality: will avoid highly seasonal, tourism-driven revenue without strong counter-season buffers.",
+      "Working capital intensity: will avoid businesses that need large ongoing working capital (big AR or inventory swings, heavy line-of-credit use) that make cash flow lumpy.",
+      "Heavy Medicaid dependence without a path to diversify payer mix; not okay with 80–90%+ Medicaid.",
+      "Hybrid ABA + HCBS models with big reimbursement risk on both sides unless heavily de‑risked (for example, standby/forgivable seller note, strong cash cushion).",
+      "One‑payer or policy‑dependent revenue that can be cut mid‑stream without protection.",
+      "IT resellers (VAR) without sticky service revenue; prefers MSP platforms and will not overpay for a reseller‑only model."
+    ]
+  }
+}
